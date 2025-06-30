@@ -6,3 +6,10 @@ Research
 
 
 [NotebookLLM](https://notebooklm.google.com/notebook/76d575af-bca0-4fc2-b7d0-60d4268e34de)
+
+
+- demo bug
+- famous bugs
+- lifecylce of a bug
+- what needs to change other than code
+- our relationship with a bug needs to change
