@@ -57,13 +57,10 @@ This talk takes learnings from multiple real life outages and tries to condense 
 ```
 abugslife/
 ├── README.md
-├── .github/
-│   ├── ISSUE_TEMPLATE/
-│   └── PULL_REQUEST_TEMPLATE.md
-├── slides/
-├── scripts/
-├── research/
-├── demos/
-├── assets/
+├── [slides](slides/README.md)/
+├── [scripts](scripts/README.md)/
+├── [research](resarch/README.md)/
+├── [demos](demos/README.md)/
+├── [assets](assets/README.md)/
 ```
 </details>
