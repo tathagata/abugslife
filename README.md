@@ -11,11 +11,13 @@
 [NotebookLLM](https://notebooklm.google.com/notebook/76d575af-bca0-4fc2-b7d0-60d4268e34de)
 
 
-- Demo bug 5 mins)
-- famous bugs
-- lifecylce of a bug
-- what needs to change other than code
-- our relationship with a bug needs to change
+Time line
+- Demo bug (5 mins)
+- famous bugs (1 min)
+- how does bugs make us feel (1 min)
+- lifecylce of a bug (2 mins)
+- what needs to change other than code (10)
+- our relationship with a bug needs to change (5 mins)
 
 # A Bug's Life
 
