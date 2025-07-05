@@ -1,0 +1,30 @@
+name: 💡 Talk Idea / Story Submission
+description: Suggest an idea, bug story, anecdote, or angle for the talk.
+title: "[IDEA] <Short description of your idea>"
+labels: ["idea", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to _A Bug's Life_!
+  - type: textarea
+    id: idea
+    attributes:
+      label: Describe your idea or story
+      description: Please provide as much detail as possible.
+      placeholder: |
+        E.g. "A story about a bug that only appeared in production due to timezone handling..."
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Why is this interesting?
+      description: What makes this relevant or impactful for the talk?
+    validations:
+      required: false
+  - type: textarea
+    id: reference
+    attributes:
+      label: Reference (optional)
+      description: Link to any supporting materials (articles, postmortems, etc.)
