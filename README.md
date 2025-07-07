@@ -1,16 +1,3 @@
-
-
-
-
-
-Time line
-- Demo bug (5 mins)
-- famous bugs (1 min)
-- how does bugs make us feel (1 min)
-- lifecylce of a bug (2 mins)
-- what needs to change other than code (10)
-- our relationship with a bug needs to change (5 mins)
-
 # A Bug's Life
 
 A beginner-friendly talk that follows the journey of a bug from production incident to root cause, and explores what needs to change (beyond code) to build and ship resilient software.
