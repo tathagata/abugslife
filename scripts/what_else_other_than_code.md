@@ -99,3 +99,55 @@ we have built. Once the new reality is understood - of course, code needs to be 
 - tests, documentation, alerts, trainings, runbooks, releases, process, tooling,
 
 -
+
+
+
+
+
+
+
+
+3. Problem and Solutions
+3.1. bugs and features life cycles are opposite in direction
+- features are well planned, grow up with a lot of care and feeding. they are like pets
+- bugs are unwanted orphans that no one wants in their family. no wonder we treat bugs like pests
+- our development life cycles are designed to ship features and often times we neglect lifecycle of bugs in designing our processes and practices
+
+3.2 Problem: Empathy: Acceptance that bugs are inevitable
+    - bugs will surface due to reflect the ever changing real life, only a matter of time
+    Solution:
+    - New features might add dollars to the bottom line, but new bugs certainly subtracts
+    - Everyone needs to come to terms across the org charts, stake holders and sister teams
+    - Empathy is bandwidth measured in time and dollars  
+
+3.3 Problem: Time: Owning your timeline
+    Solution:
+    - self empowered teams mean they do the forecast of their timeline
+    - if you don't get ahead, break down the abstract wish into a timeline, someone unqualified to do so will do it wrong
+    - always plan backwards - imagine the moment of release, and write what needs to happen till date to make it happen. What approvals are needed, what external dependencies need to be resolved as a prerequisite, what tech debt could be blocking that release
+3.2 Problem: how long does it take for a line of code to reach production?
+   - If you are not shipping every two weeks, you are waiting too long
+   - not enough automation 
+     - your CICD is Ford's conveyor belt 
+     - are you taking advatage of all the features of CICD platform
+       - connect with other teams, let other teams invoke your tests and builds
+          - webhooks
+          - api
+   - not 
+
+3.1 Problem: test environments are too different than what prod is
+    - mocks and unit tests might be occluding what is reality
+    - integration testing needs prod like environment
+      - e.g. different base image 
+
+    - integration testing needs prod like service dependencies
+      - e.g. 
+    - integration testing needs prod like data quality
+      - e.g. less volume, variety and velocity of data in pre-prod
+    - time and cost tradeoff
+3.2 testing in production
+3.3 conversations with the stakeholders
+3.4 lack of business buy in 
+  - increasing the revenue and customer satisfaction both play equal roles
+
+
