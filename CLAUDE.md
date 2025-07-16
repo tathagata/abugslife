@@ -33,13 +33,14 @@ This is a content repository for a beginner-friendly talk called "A Bug's Life" 
 ## Talk Structure
 
 The 25-minute talk follows this timeline:
-- 0-5 min: The Bug incident story
-- 5-6 min: Introduction 
-- 6-7 min: Famous bugs in history
-- 7-8 min: Emotional aspects of bugs
-- 8-10 min: Bug lifecycle
-- 10-20 min: What needs to change beyond code
-- 20-25 min: Relationship with bugs
+- 5 min: The Bug incident story
+- 1 min: self Introduction 
+- 1 min: Famous bugs in history
+- 1 min: Emotional aspects of bugs
+- 1 min: Bug lifecycle
+- 10 min: What needs to change beyond code
+- 5 min: Relationship with bugs
+- 2 min: The Postmortem takeaways
 
 ## Content Themes
 
@@ -49,3 +50,26 @@ The 25-minute talk follows this timeline:
 - Monitoring and alerting practices
 - Communication and team dynamics
 - Building resilient software systems
+
+## Focus on 
+- Think about the expectations of the audience and suggest what is missing
+- The content needs to be crisp, fluid, full of memorable metaphors and one liners, fast paced
+- Problem/Idea Clarity
+	-	Must define a focused, non-trivial problem or idea.
+	-	Reject if vague, generic, or lacks a clear goal.
+-	Technical Depth
+	-	Must match target audience (beginner/intermediate/advanced).
+	-	Penalize if too shallow, too dense, or incoherent.
+-	Clarity & Accessibility
+	-	Clear progression, avoids undefined jargon.
+	-	Bonus for analogies, visuals, simplification techniques.
+-	Originality
+	-	Prefer new insights, unique approaches, non-obvious learnings.
+	-	Reject duplicates of well-known ideas without added value.
+-	Takeaways
+	-	Must offer practical value (frameworks, tools, lessons).
+	-	Audience should gain something actionable.
+
+Scoring Tip:
+Use 1–5 per category. Flag standout talks (novel+clear+useful). Reject if incoherent, promotional, or redundant.
+ 
