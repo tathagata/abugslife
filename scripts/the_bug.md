@@ -93,8 +93,8 @@ Slim nods. “Exactly. The dashboards are empty because the data never gets writ
 Later that day during the postmortem
 ```data
     I think I found the smoking gun ... 
-    we made a change two weeks back where instead of writing one large file, we split it up the data and put them under a second level of directory by date. This chagne was done in the Airflow dag
-    The clean up process that is scheuded in cron was doing `rm -f` and siltently failing to delete the files under this directory.
+    we made a change two weeks back where instead of writing one large file, we split it up the data and put them under a second level of directory by date. This change was done in the Airflow dag code.
+    The clean up process that is scheduled in cron was doing `rm -f` and silently failing to delete the files under this directory.
     It started filling up this disk which does not have any monitoring
     attached to it - so SREs never got any alerts! And it all manifested like this - the fix is really simple just one character add a -r in the cron jobs and we are done with this bug!
 ```
@@ -103,9 +103,6 @@ Later that day during the postmortem
     Are we really? Asked the SRE - what about error handling 
 ```
 
-Manny groans. “We need to add proper error handling, monitoring, and disk usage alerts. Otherwise, this will happen again.”
-
-Atta sighs, “Let’s clear space, kill the stuck job, and refactor the code so it fails fast and notifies us next time. This can’t happen again.”
 
 
 

@@ -1,0 +1,11 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS Finder tags
+._*
+
+# macOS temporary files
+.Spotlight-V100
+.Trashes

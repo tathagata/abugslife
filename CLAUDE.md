@@ -17,11 +17,8 @@ This is a content repository for a beginner-friendly talk called "A Bug's Life" 
 - **assets/**: Supporting materials
 
 ## Key Content Files
-
-- `README.md`: Main repository overview and talk abstract
-- `scripts/the_bug.md`: Complete incident narrative from production outage to resolution
-- `scripts/what_else_other_than_code.md`: Core talk content covering testing, monitoring, communication, and process improvements
 - `scripts/README.md`: Talk timeline and structure (25-minute segments)
+The table describes which file contains the content for that talk.
 
 ## Development Notes
 
