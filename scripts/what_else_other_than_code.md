@@ -1,9 +1,6 @@
-# What else needs to change other than code?
+# You patched the code. What did you miss?
 
-After the bug has been found it is obvious that the code will undergo change. But this talk is really about all the other
-things that need to change, but often goes unnoticed during the life of a bug.
-And in reviewing those, we will uncover how we can build and ship more robust software.
-Lets see if a bug teaches us more about our code, and ourselves than what shipping a feature might. 
+
 
 ## More Code Changes
 
