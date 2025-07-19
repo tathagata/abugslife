@@ -1,6 +1,23 @@
 # You patched the code. What did you miss?
+Now if you convinced that we need to change our attitude to bugs lets break it apart into three stages.
 
+Measure
+Workflows
+Partnerships
 
+## Measure
+Where to start
+### DORA metrics
+#### Deployment Frequency
+#### Lead Time to Change
+#### Change Failure Rate
+#### Mean time to recover
+
+## Workflows
+### Shift Left
+#### CICD
+
+### Partnerships
 
 ## More Code Changes
 

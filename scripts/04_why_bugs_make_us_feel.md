@@ -12,7 +12,4 @@ In short bugs are inevitable, so we need to code is not enough - our attitude to
 How we react to a bug, and use it as an opportunity to grow - will decide if can we deliver value to our customers and move at yet move at a sustainable pace.
 Instead of reacting with shame, we can study patterns, anticipate failure modes, and treat bugs as inevitable learning checkpoints—not as personal flaws.
 
----
- 
-
-Think of bugs not as enemies to squash, but as species to understand. That shift in mindset is what makes debugging a discipline—not just damage control.
+We need to change our attitude towards bugs - instead of looking at bugs as shameful personal flaws, we need to accept them as inevitable learning checkpoints. That shift in mindset is what makes debugging a discipline—not just damage control.
