@@ -1,5 +1,6 @@
 But why does bugs make us feel ashamed of ourselves?
-It is because there is a cost associated with the bugs - not only the time it takes to fix, and test and ship - but there might be extreme price to be paid due to bugs.
+It is because there is a cost associated with the bugs - it holds back shipping values to customers, needs reworking the costs can be detrimental, major reputation risks for  corporations who are fixated on quarterly earnings!
+
 So on one hand we have Silicon Valley telling us move fast and break things, and then when things break we have to pay the price.
 
 With software eating the world, us software developers now put in place where everyday we have to make hundreds of decision - should we cut some corners to ship fast or dive deep to ensure nothing breaks when they are making a change. We are asked to build complex and dynamic ecosystems, which start as work of art but in the face of deadlines 
