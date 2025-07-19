@@ -37,7 +37,10 @@ _Pinky swear!_
 <!-- _class: split -->
 
 
-![bg left:60%](image.png)
+![bg left:60%](../assets/01_office.png)
+
+---
+![bg fit](../assets/01_dev_sre.png)
 
 
 
