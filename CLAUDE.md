@@ -9,6 +9,7 @@ This is a content repository for a beginner-friendly talk called "A Bug's Life" 
 ## Repository Structure
 
 - **slides/**: Contains presentation slides
+  - MARP https://marp.app/ is used as a slide preparation tool which used markdown
 - **scripts/**: Talk scripts and narrative content
   - `the_bug.md`: Detailed incident narrative script
   - `what_else_other_than_code.md`: Core content about organizational changes needed
