@@ -1,7 +1,7 @@
 # What Needs to Change Other Than Code
 
 We are probably all very familiar with code coverage, test pass rate, story points, velocity as developers.
-I am going to touch a little about briefly about some metrics that are very popular in DevOps/SRE zeitgiest.
+I am going to touch a little about briefly about some metrics that are popular in DevOps/SRE zeitgeist.
 [MetricsMeme](../slides/slides.md#metrics_meme)
 [DORA Metrics](../slides/slides.md#dora-metrics-as-your-north-star)
 

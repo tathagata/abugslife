@@ -1,8 +1,8 @@
 # What Needs to Change Other Than Code
 
 **How to Use**: 
-- Identify where your team stands for each metric.
-- Focus on improving one metric at a time.
+- Identify where your team stands for each metric
+- Prioritize which metric gives you the best bang for your buck
 - Use these metrics as a guide to prioritize process and tooling enhancements.
 - Their incident: Hours of coordination chaos
 - Best teams: Minutes, not hours

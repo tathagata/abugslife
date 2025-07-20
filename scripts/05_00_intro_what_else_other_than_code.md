@@ -1,7 +1,5 @@
 # What Needs to Change Other Than Code
 
-*[10-minute segment: Measure, Change Workflows, Build Partnership]*
-
 You've patched the code. 
 The hotfix is deployed. 
 Crisis averted. 
