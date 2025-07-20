@@ -1,8 +1,10 @@
 # What Needs to Change Other Than Code - Partnership
 
+Trust, empathy and honest communications are how you build great partnership.
 The distributed and connected nature of today's software is such that being written all the way from scratch - you have multiple internal and external teams, you have open source dependencies. And the reality is everyone has their own goals and priorities - your emergency might not be there priority.
 
 Empathy
+Empathy is bandwidth—measured in time and dollars
 So even if you are on a team that scores straight A-s on every metrics, that might not be true for your upstream or downstream teams. Your team is a part of a supply chain of values to the customer and the only thing that keeps this chain from breaking apart is trust.
 
 Trust
@@ -18,20 +20,18 @@ Make judgment calls under pressure. Build trust between teams during crisis.
 
 
 Honest communication
-So trust and empathy are soft words how do you make it concrete and actionable.
-Trust, empathy and honest communications are how you build great partnership.
 
-- Your support rotation calendar should be easily accessible. Include who is primary, who is backup, who is on vacation and how to reach you.
-**Questions your next bug will ask:**
-- Who verifies weekend releases?
-- What happens when the expert is at a conference?
-- How do you hand off context across time zones?
-- Solution: Bugs are inevitable. Budget for them.
-- Empathy is bandwidth—measured in time and dollars
-- Features add revenue, bugs subtract it. Both deserve equal investment.
+Start from your deadlines and work backward to plan upstream and downstream dependencies.
+If you don’t own your plan, someone else will—and they might get it wrong.
+Announce early, recalibrate them openly when things change.
+Share risks and tradeoffs early—transparency builds trust.
+Even if you’re delayed, give teams a heads-up is all about setting and meeting expectations.
+Pre-plan post-release verification with the right stakeholders, Make sure someone’s available to validate after the release.
+Don’t just inform—ask for feedback. Adjust based on what you hear.
+Your support calendar should be visible—with primary, backup, PTO, and how to engage, scope of your work
+Now Ask other teams to do the same for you.
+This creates an environment where people can speak up early—without fear of being wrong.
 
-
-**Knowledge lives in silos.** The person who wrote the code moved teams. The runbook is outdated. The tribal knowledge walked out the door.
 
 
 
