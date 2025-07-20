@@ -66,14 +66,13 @@ The real work—the work that prevents the next fire—happens in the other 90%
 
 # Three Pillars
 
-1. **Organizational Shifts**: Start with Measurement
-2. **Process Improvements**: Testing & Monitoring  
-3. **Tooling Enhancements**: Human Factors
+## Measure Baselines
+## Change Workflows
+## Build Partnerships
 
 ---
 
-# 1. Organizational Shifts
-## Start with Measurement
+# Measure Baselines
 
 ---
 
