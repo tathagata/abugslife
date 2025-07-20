@@ -1,31 +1,15 @@
 ---
 marp: true
-theme: dark
-class: invert
+theme: 
 ---
 
-# <!--fit--> Disclaimer
-All characters in the following narrative are 100% fictional.
-
---- 
-# <span style="color:red;">Disclaimer</span>
-All characters in the following narrative are 100% fictional.
-
-Any resemblance to real people, places, or events is purely accidental and definitely nothing to do with the speaker's day job.
-
----
-# Disclaimer
-All characters in the following narrative are 100% fictional.
-
-Any resemblance to real people, places, or events is purely accidental and definitely nothing to do with the speaker's day job.
-
-Also the speaker did not fall in love with any animated movie about an industrious inventor insect while growing up!
+# <!--fit--> <span style="color:red;">Disclaimer</span>
 
 --- 
 # Disclaimer
 All characters in the following narrative are 100% fictional.
 
-Any resemblance to real people, places, or events is purely accidental and definitely nothing to do with the speaker's day job.
+Any resemblance to real people, places, or events is purely accidental and definitely has nothing to do with the speaker's day job.
 
 Also the speaker did not fall in love with any animated movie about an industrious inventor insect while growing up!
 
@@ -40,7 +24,16 @@ _Pinky swear!_
 ![bg left:60%](../assets/01_office.png)
 
 ---
+
+![alt text](../assets/01_lseg.png)
+Tathagata Dasgupta (T)  
+
+---
+
+<!-- _class: split -->
+
 ![bg fit](../assets/01_dev_sre.png)
+  
 
 ---
 
@@ -338,4 +331,32 @@ Your test environment is production's distant cousin:
 > Bring production closer to development,  
 > not the other way around.
 
+
 ---
+
+# Postmortem Action Items
+
+**WHO** does **WHAT** by **WHEN**
+
+
+---
+# End of the Day Next Day
+
+| **What**                          | **Who**            |
+|-------------------------------------|------------------|
+| Alert on 85% of disk usage              | SRE          |
+| Runbook to cleanup disk for L1 support  | SRE   |
+| Support rotation calendar update        | C++          |
+| Error handling, logging improvements for missing data  | Data, C++, UI  |
+| Release Calendar updated      | Data          |
+
+
+---
+# End of the Week
+| **What**                            | **Who**            |
+|-------------------------------------|------------------|
+| Alerts when row count across services vary | SRE  |
+| Dashboard widget show row count metrics across services | SRE |
+| Error handling, move purger job to Airflow for better hand off  | Data    |
+| Improve Signal to Noise ratio, refactoring third party lib errors         | UI          |
+
