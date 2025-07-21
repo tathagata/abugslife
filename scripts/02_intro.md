@@ -8,5 +8,10 @@ This has given front row seats on many outages - and after the crisis is over an
 
 So my goal for this talk to distill some of the learnings into a checklist that you can take away and hopefully it makes the life of the person on support a little less stressful.
 
+## The New Normal - Why do we need to change
+## Measure Baselines - Where are we today
+## Change Workflows - What we do we need to change
+## Build Partnerships - How do we enact the change
+
 Continuous Questioning - how can we prevent bugs even before code is written
 
