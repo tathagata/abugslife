@@ -1,15 +1,21 @@
-But why do bugs make us feel ashamed of ourselves?
+But why the hate?
 #todo slide - Flick with his back towards the audience, shoulders drooping in shame. a little rock next him on one side and his other inventions in broken state.
 
-It is because there is a cost associated with the bugs - it holds back shipping values to customers, needs reworking the costs can be detrimental, major reputation risks for  corporations who are fixated on quarterly earnings!
+A bug is an indication that you did not do the due diligence before shipping.
+A bug reduces the value shipped to the customer.
+A bug can lead to financial loss, reputation loss, even loss of human life.
+ 
 
-So on one hand we have Silicon Valley telling us move fast and break things, and then when things break we have to pay the price.
+Why then we are asked to move fast and break things?
+Why do we prioritize speed over quality, knowing it increases the likelihood of bugs?
+Can we balance innovation and reliability without compromising either?
 
-With software eating the world, us software developers now put in place where everyday we have to make hundreds of decision - should we cut some corners to ship fast or dive deep to ensure nothing breaks when they are making a change. We are asked to build complex and dynamic ecosystems, which start as work of art but in the face of deadlines 
-turn into ideal breeding ground for bugs.
+Software is eating the world, and LLMs written code is regularly getting checked into production. 
+Its now more important than ever that our attitude towards bugs need to change.
 
-In short bugs are inevitable, so we need to code is not enough - our attitude towards bugs have to change.
+We will have to accept bugs will be inevitable, so what guardrails do we need to reduce their blast radius?
+We need to study patterns, anticipate failure modes, and treat bugs as inevitable learning checkpoints—not as personal flaws.
+That shift in mindset is makes debugging a discipline—not just damage control.
 How we react to a bug, and use it as an opportunity to grow - will decide if can we deliver value to our customers and move at yet move at a sustainable pace.
-Instead of reacting with shame, we can study patterns, anticipate failure modes, and treat bugs as inevitable learning checkpoints—not as personal flaws.
 
-We need to change our attitude towards bugs - instead of looking at bugs as shameful personal flaws, we need to accept them as inevitable learning checkpoints. That shift in mindset is what makes debugging a discipline—not just damage control.
+
