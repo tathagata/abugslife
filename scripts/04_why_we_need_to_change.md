@@ -15,6 +15,7 @@ It is now more important than ever that our attitude toward bugs changes.
 
 We must accept that bugs are inevitable—and focus instead on building strong guardrails that minimize their blast radius.
 We need to study patterns, anticipate failure modes, and treat bugs as learning checkpoints—not personal failures.
-This shift in mindset demands that we treat debugging as a discipline, not just occassional damage control.
+This shift in mindset demands that we treat debugging as a discipline, not just occasional damage control.
 
 How we respond to a bug—and use it as an opportunity to plug the gaps in our software development life cycle — will determine whether we can continue to deliver value to our customers and keep up with the pace with which technology is changing.
+Continuous Questioning - how can we prevent bugs even before code is written

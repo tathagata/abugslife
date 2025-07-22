@@ -8,3 +8,4 @@ Bugs are the unwanted orphans - hated by users, stakeholders, developers, sre, e
 We want them squashed, we announce bounties to eradicate them. 
 Even our favorite tools have language that makes shame those who introduced that bug.
 
+
