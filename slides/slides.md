@@ -100,8 +100,31 @@ Low Latency Engineering Group
 
 ---
 
+# 🐞 The New Normal  
+<span style="color:red;">_Why_</span> change our attitude toward bugs?
 
-# Measure Baselines
+---
+<!-- _class: split -->
+# <span style="color:red;">LOSS</span>
+---
+
+<!-- _class: split -->
+
+# <span style="color:red;">LOSS</span>
+
+![bg left fit](../assets/01_order_vs_got.png)
+➡️ value to the customer 
+➡️ financial, reputation, human life
+➡️ pride, ownership, craftsmanship
+
+---
+
+<!-- _class: split -->
+![bg left fit](../assets/01_order_vs_got.png)
+# <span style="color:red;">LOSS</span>
+➡️ value to the customer 
+➡️ financial, reputation, human life
+➡️ pride, ownership, craftsmanship
 
 ---
 
