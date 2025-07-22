@@ -1,4 +1,4 @@
-# Why do we need to change our attitude towards bugs?
+# The New Normal - Why do we need to change
 
 #TODO slide – Flick with his back to the audience, shoulders drooping in shame. A small rock next to him on one side, and his other inventions broken beside him.
 

@@ -7,7 +7,7 @@ I know I'm holding you back from lunch, so I'll quickly introduce my self - my n
 This has given front row seats on many outages - and after the crisis is over and we are doing retrospective or post mortem, I have always found myself asking the question
 
 We have patched the code. 
-The hotfix has been deployed. 
+The hot fix has been deployed. 
 Crisis is averted.
 But what else needs to change other than code so that we are not here again?
 
