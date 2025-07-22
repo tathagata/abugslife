@@ -9,18 +9,20 @@ This has given front row seats on many outages - and after the crisis is over an
 We have patched the code. 
 The hot fix has been deployed. 
 Crisis is averted.
-But what else needs to change other than code so that we are not here again?
 
-So my goal for this talk to distill some of those learnings and hopefully it makes the life of the person on support a little less stressful.
+But - Is the bug really gone? 
+Or will it come back again as a bigger crisis? 
+What else other than code needs a patch?
 
-## The New Normal - Why do we need to change
-## Measure Baselines - Where are we today
-## Change Workflows - What we do we need to change
-## Build Partnerships - How do we enact the change
+If those questions resonate with you, I think you'll find this talk useful.
+My goal is to share some of the lessons I've learned from my own mistakes, seeing others do things better.
+I'll try to keep it practical and actionable without any specific tool recommendations so that you can adopt the principles in your own tooling.
+And hopefully your next bug fix will be a little less stressful.
 
-```mermaid
-graph TD
-    A[The New Normal - Why do we need to change] --> B[Measure Baselines - Where are we today]
-    B --> C[Change Workflows - What do we need to change]
-    C --> D[Build Partnerships - How do we enact the change]
-```
+
+I want to break this talk into four parts:
+## The New Normal - Why change our attitude towards bugs?
+## Measure Baselines - Where are we today?
+## Change Workflows - What we need do change?
+## Build Partnerships - How do we enact the change?
+
