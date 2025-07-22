@@ -35,40 +35,71 @@ Low Latency Engineering Group
 
 ---
 
-![bg fit](../assets/01_dev_sre.png)
+![bg fit left:60%](../assets/01_dev_sre.png)
   
 
 ---
 <!-- _class: split -->
 
 ![bg fit left:50%](../assets/01_front_row_seats.png)
-
----
-
-✅ Patch deployed 
-✅ Crisis averted
-
----
-❓ Is the bug really gone?
-❓ Or will it come back as a bigger crisis?  
-❓ What else other than code needs a patch?
+✅ Patch deployed ➡️ Crisis averted
 
 
 ---
+![bg fit left:50%](../assets/01_front_row_seats.png)
+                ➡️ Will it come back? 
+                ➡️ What else needs a patch?
+                 
 
-# The Other **90%**
+---
 
-The real work—the work that prevents the next fire—happens in the other 90%
+🐞 The New Normal
+
+📊 Measure Baselines 
+
+🔄 Change Workflows 
+
+🤝 Build Partnerships
+
+---
+🐞 The New Normal  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_Why_</span> change our attitude toward bugs?  
+
+📊 Measure Baselines 
+
+🔄 Change Workflows   
+
+🤝 Build Partnerships
+
+---
+🐞 The New Normal  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_Why_</span> change our attitude toward bugs?  
+
+📊 Measure Baselines  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red;">_Where_</span> are we today?  
+
+🔄 Change Workflows   
+
+🤝 Build Partnerships  
+
+---
+🐞 The New Normal  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_Why_</span> change our attitude toward bugs?  
+
+📊 Measure Baselines  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red;">_Where_</span> are we today?  
+
+🔄 Change Workflows  &nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_What_</span> needs to change?  
+
+🤝 Build Partnerships
 
 ---
 
-# Three Pillars
+🐞 The New Normal  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_Why_</span> change our attitude toward bugs?  
 
-## Measure Baselines
-## Change Workflows
-## Build Partnerships
+📊 Measure Baselines  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red;">_Where_</span> are we today?  
+
+🔄 Change Workflows  &nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_What_</span> needs to change?  
+
+🤝 Build Partnerships  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_How_</span> do we make it happen?  
 
 ---
+
 
 # Measure Baselines
 
