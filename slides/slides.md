@@ -6,14 +6,14 @@ theme:
 # <!--fit--> <span style="color:red;">Disclaimer</span>
 
 --- 
-# Disclaimer
-All characters in the following narrative are 100% fictional.
+# <span style="color:red;">Disclaimer</span>
+The following narrative is a work of pure fiction.  
 
-Any resemblance to real people, places, or events is purely accidental and definitely has nothing to do with the speaker's day job.
+Any similarities to actual people, places, or events are entirely coincidental and absolutely unrelated to the speaker's professional life.  
 
-Also the speaker did not fall in love with any animated movie about an industrious inventor insect while growing up!
+Furthermore, the speaker categorically denies any emotional attachment to animated films featuring entrepreneurial insects.  
 
-_Pinky swear!_
+_This statement has been notarized by the Ministry of Totally Serious Bugs._
 
 ---
 
@@ -25,29 +25,34 @@ _Pinky swear!_
 
 ---
 
-![alt text](../assets/01_lseg.png)
-Tathagata Dasgupta (T)  
+# <!--fit--> To Be Continued ...
 
 ---
 
-<!-- _class: split -->
+![alt text](../assets/01_lseg.png)
+Tathagata Dasgupta (T)
+Low Latency Engineering Group
+
+---
 
 ![bg fit](../assets/01_dev_sre.png)
   
 
 ---
+<!-- _class: split -->
 
-# <!--fit--> What Needs to Change Other Than Code
+![bg fit left:50%](../assets/01_front_row_seats.png)
 
 ---
 
-# You've Patched the Code
+✅ Patch deployed 
+✅ Crisis averted
 
-✅ Hotfix deployed  
-✅ Crisis averted  
-✅ Customer happy  
+---
+❓ Is the bug really gone?
+❓ Or will it come back as a bigger crisis?  
+❓ What else other than code needs a patch?
 
-## You're only **10% done**
 
 ---
 
