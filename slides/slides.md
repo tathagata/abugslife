@@ -1,6 +1,7 @@
 ---
 marp: true
-theme: 
+theme: default
+# class: invert
 ---
 
 # <!--fit--> <span style="color:red;">Disclaimer</span>
@@ -19,7 +20,6 @@ _This statement has been notarized by the Ministry of Totally Serious Bugs._
 
 
 <!-- _class: split -->
-
 
 ![bg left:60%](../assets/01_office.png)
 
@@ -128,7 +128,7 @@ Low Latency Engineering Group
 
 ---
 
-<!-- _class: split -->
+<!-- _class: split; invert -->
 ![bg left fit](../assets/01_reputation.png)
 # <span style="color:red;">LOSS</span>
 ➡️ value to the customer 
@@ -147,7 +147,7 @@ Low Latency Engineering Group
 ---
 <!-- _class: split -->
 ![bg left fit](../assets/01_blame.png)
-# <span style="color:red;">LOSS</span>
+# <span style="color:red;">BLAME</span>
 ➡️ value to the customer 
 ➡️ financial, reputation, human life
 ➡️ **pride, ownership, craftsmanship**
@@ -155,10 +155,29 @@ Low Latency Engineering Group
 ---
 <!-- _class: split -->
 ![bg left fit](../assets/01_fast_cheap_right.png)
-# <span style="color:red;">LOSS</span>
-➡️ value to the customer 
-➡️ financial, reputation, human life
-➡️ **pride, ownership, craftsmanship**
+# <span style="color:red;">BLAME, yet ...</span>
+➡️ Unrealistic Deadlines
+➡️ Tradeoffs
+➡️ Ever changing landscape
+
+---
+![bg vertical h:300](../assets/01_anthropic.png)
+![bg h:300](../assets/01_meta.png)
+![bg h:200](../assets/01_microsoft.png)
+![bg h:300](../assets/01_google.png)
+
+---
+<!-- _class: split -->
+![bg left fit](../assets/01_vibecoding.png)
+⚡ Coding at the speed of thought
+🦥 Debugging at the speed of sloth 
+
+---
+# 🐞 Right Mindset
+
+* opportunity to plug the gaps, not a blame game
+* learning checkpoints, not personal failures
+* debugging as a discipline, not just occasional damage control
 
 ---
 # DORA Metrics as Your North Star
