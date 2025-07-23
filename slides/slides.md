@@ -26,6 +26,10 @@ _This statement has been notarized by the Ministry of Totally Serious Bugs._
 
 ---
 
+![slack fit](../assets/01_slack.png)
+
+---
+
 # <!--fit--> To Be Continued ...
 
 ---
