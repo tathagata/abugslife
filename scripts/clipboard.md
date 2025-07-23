@@ -58,3 +58,63 @@ But here's the truth: **Bugs teach you more about your system than features ever
 - Solution: Your CICD is Ford's conveyor belt—but are you using all its features?
 - Team integration via webhooks and APIs
 - If shipping takes more than two weeks, you're waiting too long
+
+
+- **Blue Green**: Deploy new version alongside old, switch traffic when ready
+- **Canary**: Deploy to a small subset of users first, monitor, then roll out to everyone
+- **Synthetic Monitoring**: Simulate user interactions to validate system behavior
+- **Feature Flags**: Toggle features on/off without redeploying code
+- **Chaos Engineering**: Intentionally break things in controlled blast radius
+
+
+
+# Process Gaps Kill Velocity
+
+**Questions your next bug will ask:**
+- Who owns the support rotation? 
+- Who verifies weekend releases?
+- What happens when the expert is at a conference?
+- How do you hand off context across time zones?
+
+---
+
+# The Locality of Reference Problem
+
+**Knowledge lives in silos.**
+- Person who wrote the code moved teams
+- Runbook is outdated  
+- Tribal knowledge walked out the door
+
+**Solution**: Documentation that lives with the code, not in wikis that rot
+
+
+
+---
+
+# Problem 1: Empathy Deficit
+
+**Solution**: Bugs are inevitable. Budget for them.
+- Empathy is bandwidth—measured in time and dollars
+- Features add revenue, bugs subtract it
+- **Both deserve equal investment**
+
+---
+
+# Problem 2: Timeline Ownership
+
+**Solution**: Self-empowered teams forecast their own timelines
+- Plan backwards from release day
+- Map dependencies, approvals, tech debt blockers
+- **If you don't plan it, someone unqualified will**
+
+
+---
+
+# A Bug Is Never Just a Code Change
+
+It's:
+- Reproducing the problem reliably
+- Understanding system interactions
+- Coordinating across teams and timezones  
+- Making tradeoff decisions under pressure
+- Building processes that prevent recurrence

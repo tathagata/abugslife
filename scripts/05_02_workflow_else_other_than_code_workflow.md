@@ -49,12 +49,8 @@ This is really ground zero for us.
 This is before the code has been written when it is still a concept, a germ of an idea.
 As of now, this is still a completely human process.
 And a bug that that has its roots here is the most expensive bug to fix.
-And accordingly this is the most difficult bug to fix.
-As the roots of the bugs here are not in the code base, but in culture of the organization.
-This is pure and raw human communication - and given neuralink is not yet a thing, we are still bottlenecked by what makes us human - our ability to communicate.
-How we fix bugs here will take us to your next section - building partnerships
-
-And this is where communication and team collaboration becomes the key.
+Because bugs that originate here point to gaps in culture of the organization.
+And the only way to fix that is to build partnerships with your product managers, your designers, your architects, and your stakeholders.
 
 
 

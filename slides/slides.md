@@ -2,6 +2,7 @@
 marp: true
 theme: default
 # class: invert
+html: true
 ---
 
 # <!--fit--> <span style="color:red;">Disclaimer</span>
@@ -265,196 +266,62 @@ DevOps Research and Assessment
 🔄 Change Workflows  &nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_What_</span> needs to change? 
 
 ---
-## 
+
 <!-- _class: split -->
 ![bg left fit](../assets/01_shift_left.png)
 * Test Driven Development
 * Pair Programming
----
-
-
-# Testing in Production: The Ultimate Truth
-
-- **Chaos Engineering**: Intentionally break things to find weaknesses
-- **Canary Deployments**: Let production tell you what's wrong  
-- **Feature Flags**: Instant rollback without redeployment
-
-**Game Changer**: DevContainers bring production to your laptop
 
 ---
 
-# Monitoring and Observability
-
-**Red Flag**: If customers report issues before your monitoring does, your monitoring is broken.
-* Periodic reviews of alert thresholds
-* Actionable alerts, not noise
-* Dashboards for debugging, alerts for action
-* Automate runbooks to alerts for context
-* Logs are your best friend
-* Metrics are your second best friend
-* Traces are your third best friend
----
-
-
-| **DORA Metric**       | **Shift-Left Workflow Change**                                                                 |
-|-----------------------------|--------------------------------------------------------------------------------------|
-| Deployment Frequency        | Canary Deployments                                                                  |
-| Lead Time for Changes       | Pre-commit Hooks for <br> Linters  <br> Static Code Quality Checks  <br> Security Scanning       |
-| Change Failure Rate         | **Test-Driven Development (TDD)**  <br> **Unit Test Coverage Gates**                |
-| Mean Time to Recovery (MTTR)| Feature Flags                                     |
-
+![traditional](../assets/01_traditional.png)
 
 ---
 
-# The Bug Story Had:
-- Zero disk monitoring
-- Zero alerts  
-- Job silently failed for hours
+![shiftleft](../assets/01_shiftleft.png)
+
+---
+<!-- _class: split -->
+![bg left fit](../assets/01_shiftleft.png)
+# Deployments
+- **Blue Green, Canary**
+- **Synthetic Monitoring**
+- **Feature Flags**
+- **Chaos Engineering**
 
 ---
 
-# Three Monitoring Questions Every Bug Should Ask:
 
-1. **Alert Volume**: Are you drowning teams in noise? *(Alert fatigue kills response)*
-2. **Alert Quality**: Do alerts explain the problem AND the next action?
-3. **Purpose Clarity**: Dashboards are for debugging. Alerts are for action.
-
----
-
-# Remember:
-
-> A dashboard is a debugger,  
-> not an early warning system.
+<!-- _class: split -->
+![bg left fit](../assets/01_shiftleft.png)
+# Observability
+> Customer should not be part of your monitoring stack!
+- Actionable alerts, not noise
+- Dashboards for debugging, alerts for action
+- Logs, Metrics, Traces are the besties you need
+- Periodic reviews of alert and thresholds
 
 ---
 
-# 3. Tooling Enhancements
-## The Human Factors
+![bg left fit](../assets/01_shiftleft.png)
+# Dev Experience
+> Happy devs ship better code 
+- DevContainers
+- Pre-commit Hooks for Lint, Code Quality, Security Scanning
+- Meta prompts (CLAUDE.md)
 
 ---
-
-# Communication in Crisis
-
-The bug story shows coordination chaos:
-- Multiple Slack channels
-- Different teams, different tools
-- Remote, hybrid, multiple timezones
-- Stakeholder pressure escalating
+![bg left fit](../assets/01_shiftleft.png)
+# Partnership 
+> bugs that happen before the code
+- Empathy
+- Trust
+- Honest Communication
 
 ---
+<!-- _class: split -->
 
-# Process Gaps Kill Velocity
-
-**Questions your next bug will ask:**
-- Who owns the support rotation? 
-- Who verifies weekend releases?
-- What happens when the expert is at a conference?
-- How do you hand off context across time zones?
-
----
-
-# The Locality of Reference Problem
-
-**Knowledge lives in silos.**
-- Person who wrote the code moved teams
-- Runbook is outdated  
-- Tribal knowledge walked out the door
-
-**Solution**: Documentation that lives with the code, not in wikis that rot
-
----
-
-# The AI Question
-## Will Robots Take Our Debugging Jobs?
-
----
-
-# What AI Can Do:
-Generate code from prompts
-
-# What AI Can't Do:
-- Navigate coordination chaos
-- Understand business context
-- Make judgment calls under pressure  
-- Build trust between teams during crisis
-
----
-
-# A Bug Is Never Just a Code Change
-
-It's:
-- Reproducing the problem reliably
-- Understanding system interactions
-- Coordinating across teams and timezones  
-- Making tradeoff decisions under pressure
-- Building processes that prevent recurrence
-
----
-
-# The 90% That Matters Most?
-
-**That's still human work.**
-
----
-
-# The Mindset Shift
-## From Pets to Partners
-
----
-
-# Features vs Bugs: The Adoption Gap
-
-**Features** are planned, nurtured, celebrated—they're **pets**  
-**Bugs** are unwanted orphans that nobody claims—treated like **pests**
-
-**Truth**: Bugs teach you more about your system than features ever will.
-
----
-
-# Three Organizational Problems Every Team Faces
-
----
-
-# Problem 1: Empathy Deficit
-
-**Solution**: Bugs are inevitable. Budget for them.
-- Empathy is bandwidth—measured in time and dollars
-- Features add revenue, bugs subtract it
-- **Both deserve equal investment**
-
----
-
-# Problem 2: Timeline Ownership
-
-**Solution**: Self-empowered teams forecast their own timelines
-- Plan backwards from release day
-- Map dependencies, approvals, tech debt blockers
-- **If you don't plan it, someone unqualified will**
-
----
-
-# Problem 3: CICD as Assembly Line
-
-**Solution**: Your CICD is Ford's conveyor belt—but are you using all its features?
-- Team integration via webhooks and APIs
-- **If shipping takes more than two weeks, you're waiting too long**
-
----
-
-# The Production Gap
-
-Your test environment is production's distant cousin:
-- Different data volume, variety, velocity
-- Different infrastructure, dependencies, configurations
-- **The gap between test and prod is where bugs hide**
-
----
-
-# Solution:
-
-> Bring production closer to development,  
-> not the other way around.
-
+![bg left:60%](../assets/01_office.png)
 
 ---
 
