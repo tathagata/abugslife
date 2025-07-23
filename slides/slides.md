@@ -272,6 +272,7 @@ DevOps Research and Assessment
 * Pair Programming
 ---
 
+
 # Testing in Production: The Ultimate Truth
 
 - **Chaos Engineering**: Intentionally break things to find weaknesses
@@ -282,9 +283,26 @@ DevOps Research and Assessment
 
 ---
 
-# Monitoring: When Customers Become Your Alert System
+# Monitoring and Observability
 
 **Red Flag**: If customers report issues before your monitoring does, your monitoring is broken.
+* Periodic reviews of alert thresholds
+* Actionable alerts, not noise
+* Dashboards for debugging, alerts for action
+* Automate runbooks to alerts for context
+* Logs are your best friend
+* Metrics are your second best friend
+* Traces are your third best friend
+---
+
+
+| **DORA Metric**       | **Shift-Left Workflow Change**                                                                 |
+|-----------------------------|--------------------------------------------------------------------------------------|
+| Deployment Frequency        | Canary Deployments                                                                  |
+| Lead Time for Changes       | Pre-commit Hooks for <br> Linters  <br> Static Code Quality Checks  <br> Security Scanning       |
+| Change Failure Rate         | **Test-Driven Development (TDD)**  <br> **Unit Test Coverage Gates**                |
+| Mean Time to Recovery (MTTR)| Feature Flags                                     |
+
 
 ---
 
