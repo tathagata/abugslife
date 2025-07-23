@@ -113,17 +113,35 @@ Low Latency Engineering Group
 # <span style="color:red;">LOSS</span>
 
 ![bg left fit](../assets/01_order_vs_got.png)
+➡️ **value to the customer**
+
+
+---
+
+<!-- _class: split -->
+![bg left fit](../assets/01_knight_capital.png)
+# <span style="color:red;">LOSS</span>
 ➡️ value to the customer 
-➡️ financial, reputation, human life
+➡️ **financial**, reputation, human life
+➡️ pride, ownership, craftsmanship
+
+
+---
+
+<!-- _class: split -->
+![bg left fit](../assets/01_reputation.png)
+# <span style="color:red;">LOSS</span>
+➡️ value to the customer 
+➡️ financial, **reputation**, human life
 ➡️ pride, ownership, craftsmanship
 
 ---
 
 <!-- _class: split -->
-![bg left fit](../assets/01_order_vs_got.png)
+![bg left fit](../assets/01_boeing.png)
 # <span style="color:red;">LOSS</span>
 ➡️ value to the customer 
-➡️ financial, reputation, human life
+➡️ financial, reputation, **human life**
 ➡️ pride, ownership, craftsmanship
 
 ---

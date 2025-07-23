@@ -32,3 +32,12 @@ This shift in mindset demands that we treat debugging as a discipline, not just 
 
 How we respond to a bug—and use it as an opportunity to plug the gaps in our software development life cycle — will determine whether we can continue to deliver value to our customers and keep up with the pace with which technology is changing.
 Continuous Questioning - how can we prevent bugs even before code is written
+
+
+
+https://www.henricodolfing.com/2019/06/project-failure-case-study-knight-capital.html
+
+
+https://www.justice.gov/archives/opa/pr/chinese-military-personnel-charged-computer-fraud-economic-espionage-and-wire-fraud-hacking
+
+
