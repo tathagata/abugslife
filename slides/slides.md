@@ -178,16 +178,81 @@ Low Latency Engineering Group
 * opportunity to plug the gaps, not a blame game
 * learning checkpoints, not personal failures
 * debugging as a discipline, not just occasional damage control
+---
+
+# 📊 Measure Baselines  
+<span style="color:red;">_Where_</span> are we today? 
 
 ---
-# DORA Metrics as Your North Star
+<!-- _class: split -->
+![bg left fit](../assets/01_gaming_metrics.png)
+> If you can't measure it, you can't improve it.
+* code coverage
+* test pass rate
+* cyclomatic complexity
 
-Before changing anything, **measure where you are**
-DevOps Research and Assessment (DORA)
+---
+
+# Yet more metrics
+<!-- _class: split -->
+![bg left fit](../assets/dora-swiper.gif)
+DORA
+DevOps Research and Assessment 
+
+---
+## How often do you deploy?
+
+| **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
+|---------------------------|---------------------------|----------------------------|----------------------------|
+| **Deployment Frequency**  | **Multiple times/day**    | Weekly to monthly          | Less than monthly          |
+
+* one metric to rule them all 💕
+
+---
+
+## Why you cannot deploy faster?
+<!-- _class: split -->
+| **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
+|---------------------------|---------------------------|----------------------------|----------------------------|
+| **Lead Time for Changes** | **Hours**                | Days                       | Weeks to months            |
+
+> Too many manual steps?
+> Slow build times?
+> Slow test execution?
+> Too many approvals?
+> Architectural limitations to achieve zero downtime deployments?
+> Upstream dependencies and Downstream impact?
+
+---
+
+## How often do your changes fail?
+
+| **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
+|---------------------------|---------------------------|----------------------------|----------------------------|
+| **Change Failure Rate**   | **<15%**                 | 15-30%                     | >30%                       |
+> Technical debt with brittle areas in the code base that need refactoring?
+> Are there gaps in your testing pyramid?
+> Are new tests getting added for every bug fix?
+> Are regression tests flaky?
+> Does your pre-prod environment mirror production?
+> Quality of Test data - velocity, variety, volume?
+
+
+---
+
+## How fast do you bounce back?
+
+| **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
+|---------------------------|---------------------------|----------------------------|----------------------------|
+| **Time to Restore Service** | **<1 hour**             | <1 day                     | >1 day                     |
+> Are the Alert Quality and Volume good enough? 
+> Are your runbooks, support rotation, upcoming release pages up to date? 
+> Are there knowledge and access control gaps in your team? 
+> Are the team members feeling safe during a crisis? 
+> Are there back up plan when the key people are unavailable?
 
 ---
 ## DORA
-![bg fit](../assets/dora_explorer.png)
 | **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
 |---------------------------|---------------------------|----------------------------|----------------------------|
 | **Deployment Frequency**  | Multiple times/day        | Weekly to monthly          | Less than monthly          |
@@ -196,82 +261,15 @@ DevOps Research and Assessment (DORA)
 | **Time to Restore Service** | <1 hour                 | <1 day                     | >1 day                     |
 
 ---
-## Deployment Frequency
 
-| **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
-|---------------------------|---------------------------|----------------------------|----------------------------|
-| **Deployment Frequency**  | **Multiple times/day**    | Weekly to monthly          | Less than monthly          |
+🔄 Change Workflows  &nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_What_</span> needs to change? 
 
 ---
-
-## Lead Time for Changes
-
-| **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
-|---------------------------|---------------------------|----------------------------|----------------------------|
-| **Lead Time for Changes** | **Hours**                | Days                       | Weeks to months            |
-
----
-
-## Change Failure Rate
-
-| **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
-|---------------------------|---------------------------|----------------------------|----------------------------|
-| **Change Failure Rate**   | **<15%**                 | 15-30%                     | >30%                       |
-
----
-
-## Time to Restore Service
-
-| **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
-|---------------------------|---------------------------|----------------------------|----------------------------|
-| **Time to Restore Service** | **<1 hour**             | <1 day                     | >1 day                     |
----
-# The Tech Debt Reality Check
-
-We ship the minimum viable fix because we're always racing to the next fire
-
----
-
-# What Accumulates
-
-- **Technical Debt**: *"I'll refactor this later"* *(never happens)*
-- **Process Debt**: Shortcuts that become permanent workflows  
-- **Knowledge Debt**: Tribal knowledge in one person's head
-
-**Every bug is a loan payment on this debt**
-
----
-
-# 2. Process Improvements
-## The Testing Pyramid Reality
-
----
-
-# Bug Fixes Don't Get the Love They Deserve
-
-✅ **New Features**: Comprehensive tests  
-❌ **Bug Fixes**: Quick patch
-
-**This is backwards.** Every bug fix should add a test that prevents regression.
-
----
-
-# The False Security of 100% Coverage
-
-**Unit Tests**: Great for logic, terrible for integration
-- Your mocks lie when external service contracts change
-- 100% coverage ≠ 100% confidence
-
----
-
-# Integration Tests: Closer to Reality
-
-**But expensive:**
-- Slow to run, hard to maintain
-- Test environments are production's distant cousins
-
-**The Gap**: Further your test environment from production = more bugs slip through
-
+## 
+<!-- _class: split -->
+![bg left fit](../assets/01_shift_left.png)
+* Test Driven Development
+* Pair Programming
 ---
 
 # Testing in Production: The Ultimate Truth
