@@ -4,7 +4,7 @@
 
 A bug reduces the value delivered to the customer.
 A bug can lead to financial loss, reputational damage, even loss of human life.
-But overall, we treat a bug as an indicator that due diligence was not done before shipping.
+This has created a lot of stigma around bugs, leading to a culture of blame and shame.
 
 We first need to acknowledge that features and bugs have the complete opposite life cycle.
 We look at bugs are the unwanted orphans - hated by users, stakeholders, developers, sre, even QAs. 

@@ -145,8 +145,20 @@ Low Latency Engineering Group
 ➡️ pride, ownership, craftsmanship
 
 ---
+<!-- _class: split -->
+![bg left fit](../assets/01_blame.png)
+# <span style="color:red;">LOSS</span>
+➡️ value to the customer 
+➡️ financial, reputation, human life
+➡️ **pride, ownership, craftsmanship**
 
-> If you can't measure, you can't improve
+---
+<!-- _class: split -->
+![bg left fit](../assets/01_fast_cheap_right.png)
+# <span style="color:red;">LOSS</span>
+➡️ value to the customer 
+➡️ financial, reputation, human life
+➡️ **pride, ownership, craftsmanship**
 
 ---
 # DORA Metrics as Your North Star
