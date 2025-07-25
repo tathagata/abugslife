@@ -26,7 +26,7 @@ _This statement has been notarized by the Ministry of Totally Serious Bugs._
 
 ---
 
-![slack fit](../assets/01_slack.png)
+![bg fit](../assets/01_slack_01.png)
 
 ---
 
@@ -109,10 +109,28 @@ Low Latency Engineering Group
 <span style="color:red;">_Why_</span> change our attitude toward bugs?
 
 ---
-<!-- _class: split -->
-# <span style="color:red;">LOSS</span>
----
 
+![bg vertical h:300](../assets/01_anthropic.png)
+![bg h:300](../assets/01_meta.png)
+![bg h:200](../assets/01_microsoft.png)
+![bg h:300](../assets/01_google.png)
+
+---
+<!-- _class: split -->
+![bg left fit](../assets/01_vibecoding.png)
+⚡ Coding at the speed of thought
+🦥 Debugging at the speed of sloth 
+
+---
+<!-- _class: split -->
+![bg left fit](../assets/01_fast_cheap_right.png)
+# <span style="color:red;">Mo code, mo bugs</span>
+➡️ Unrealistic Deadlines
+➡️ Tradeoffs
+➡️ Ever changing landscape
+
+
+---
 <!-- _class: split -->
 
 # <span style="color:red;">LOSS</span>
@@ -128,17 +146,15 @@ Low Latency Engineering Group
 # <span style="color:red;">LOSS</span>
 ➡️ value to the customer 
 ➡️ **financial**, reputation, human life
-➡️ pride, ownership, craftsmanship
 
 
 ---
 
-<!-- _class: split; invert -->
+<!-- _class: split; -->
 ![bg left fit](../assets/01_reputation.png)
 # <span style="color:red;">LOSS</span>
 ➡️ value to the customer 
 ➡️ financial, **reputation**, human life
-➡️ pride, ownership, craftsmanship
 
 ---
 
@@ -157,25 +173,6 @@ Low Latency Engineering Group
 ➡️ financial, reputation, human life
 ➡️ **pride, ownership, craftsmanship**
 
----
-<!-- _class: split -->
-![bg left fit](../assets/01_fast_cheap_right.png)
-# <span style="color:red;">BLAME, yet ...</span>
-➡️ Unrealistic Deadlines
-➡️ Tradeoffs
-➡️ Ever changing landscape
-
----
-![bg vertical h:300](../assets/01_anthropic.png)
-![bg h:300](../assets/01_meta.png)
-![bg h:200](../assets/01_microsoft.png)
-![bg h:300](../assets/01_google.png)
-
----
-<!-- _class: split -->
-![bg left fit](../assets/01_vibecoding.png)
-⚡ Coding at the speed of thought
-🦥 Debugging at the speed of sloth 
 
 ---
 # 🐞 Right Mindset

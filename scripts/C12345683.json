@@ -1,0 +1,101 @@
+{
+    "meta": {
+        "last_id": 16
+    },
+    "1720853700.000001": {
+        "type": "message",
+        "user_id": "W10000001",
+        "text": "OpsGenie: P1: Goldkern Husks: Dashboards not loading!!!",
+        "ts": "1720853700.000001"
+    },
+    "1720853700.000002": {
+        "type": "message",
+        "user_id": "W10000001",
+        "text": "@heimlich @atta.incidentmgr All GH dashboards are down. No visualizations. Client is blind. Need help ASAP. Searched Confluence, runbooks. Need someone from the UI team to take a look!",
+        "ts": "1720853700.000002"
+    },
+    "1720853700.000003": {
+        "type": "message",
+        "user_id": "W10000004",
+        "text": "Is it just one client? One user? Did you ask them to clear their browser cache? Actually are they using a Supported browser? It might be their Firewall rule changes, can you ask to check if they are blocking websockets? And please ask them to include a few screenshots ... @Flik have you done a screenshare with any of the user?",
+        "ts": "1720853700.000003"
+    },
+    "1720853700.000004": {
+        "type": "message",
+        "user_id": "W10000002",
+        "text": "@everyone Hopper has escalated to Antelligence execs. We need coordinated updates - why is our status page still showing the services healthy? Can the SRE team check? @manny",
+        "ts": "1720853700.000004"
+    },
+    "1720853700.000005": {
+        "type": "message",
+        "user_id": "W10000005",
+        "text": "Well the health checks are passing - and we haven't seen any other clients complaining. I think it might be something on their side.",
+        "ts": "1720853700.000005"
+    },
+    "1720853700.000006": {
+        "type": "message",
+        "user_id": "W10000005",
+        "text": "Actually, I don't think it is them - and it isn't the UI team as well. Here, the row count in the json payload is showing zero. The backend API is not sending data. Most of the C++ guys are at CPPcon - @atta can you check who might be around?",
+        "ts": "1720853700.000006"
+    },
+    "1720853700.000007": {
+        "type": "message",
+        "user_id": "W10000002",
+        "text": "Well, unless there is a change why would it stop sending data all of a sudden? Do you know if they did a release this weekend?",
+        "ts": "1720853700.000007"
+    },
+    "1720853700.000008": {
+        "type": "message",
+        "user_id": "W10000005",
+        "text": "Okay, no releases on ArgoCD - the pods are pretty old actually, I have also checked their logs no exceptions. However it looks like the service is constantly polling for data",
+        "ts": "1720853700.000008"
+    },
+    "1720853700.000009": {
+        "type": "message",
+        "user_id": "W10000005",
+        "text": "Has anyone checked the Data team’s Airflow cluster?",
+        "ts": "1720853700.000009"
+    },
+    "1720853700.000010": {
+        "type": "message",
+        "user_id": "W10000007",
+        "text": "Wait. The nightly ticker load batch hasn’t completed yet—it should have completed before markets opened.",
+        "ts": "1720853700.000010"
+    },
+    "1720853700.000011": {
+        "type": "message",
+        "user_id": "W10000007",
+        "text": "The job is stuck in a loop. It keeps trying to write its output file, but the disk is full. Every attempt to write fails with an ‘OSError: No space left on device,’ but the code just catches the error and tries again, over and over. There’s no backoff, no alert, and no exit condition. The job never finishes, and the pipeline is completely blocked.",
+        "ts": "1720853700.000011"
+    },
+    "1720853700.000012": {
+        "type": "message",
+        "user_id": "W10000007",
+        "text": "Right ... there is a nightly cron job that cleans up T-1 files. Let me check if that is failing.",
+        "ts": "1720853700.000012"
+    },
+    "1720853700.000013": {
+        "type": "message",
+        "user_id": "W10000007",
+        "text": "Nothing in syslog - it is almost impossible to run any commands on that host, but looks like none of the files have been deleted. I am going to purge them manually and then restart the job! I am confident this will fix the issue - we will scale up the workers and we can clear up this queue within 2 hours. Please let the client know.",
+        "ts": "1720853700.000013"
+    },
+    "1720853700.000014": {
+        "type": "message",
+        "user_id": "W10000007",
+        "text": "I think I found the smoking gun ... we made a change two weeks back where instead of writing one large file, we split it up the data and put them under a second level of directory by date. This change was done in the Airflow dag code. The clean up process that is scheduled in cron was doing `rm -f` and silently failing to delete the files under this directory. It started filling up this disk which does not have any monitoring attached to it - so SREs never got any alerts! And it all manifested like this - the fix is really simple just one character add a -r in the cron jobs and we are done with this bug!",
+        "ts": "1720853700.000014"
+    },
+    "1720853700.000015": {
+        "type": "message",
+        "user_id": "W10000005",
+        "text": "So the bug was in the Airflow DAG code, but it was not caught because there was no monitoring on the disk usage?",
+        "ts": "1720853700.000015"
+    },
+    "1720853700.000016": {
+        "type": "message",
+        "user_id": "W10000005",
+        "text": "Your patch fixed the bug. But what else needs a patch?",
+        "ts": "1720853700.000016"
+    }
+}
