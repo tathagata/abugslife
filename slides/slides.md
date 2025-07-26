@@ -463,3 +463,12 @@ DevOps Research and Assessment
 | UI       | Implement synthetic UI tests for post release validations                  | Time to Restore Service |
 
 ---
+
+A bug fix is rarely a quick code change.
+A bug's life is a lesson in software development.
+Continuous Questioning - What else needs a patch?
+Is it our architecture? Our processes? Or is it us?
+Technology will keep moving faster than we can keep up with.
+Crisis will always be a part of software development.
+How we respond to change and crisis, will define us and our products.
+So lets be little kind to each other, and also ourselves.
