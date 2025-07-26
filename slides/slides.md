@@ -67,6 +67,69 @@ _This statement has been notarized by the Ministry of Totally Serious Bugs._
 ![bg fit](../assets/01_slack_12.png)
 
 ---
+
+![bg fit](../assets/01_airflow.png)
+
+---
+
+![bg fit](../assets/01_slack_13.png)
+
+---
+
+![bg fit](../assets/01_slack_14.png)
+---
+```bash
+/data/nyse.ticker
+/data/amex.ticker
+/data/nasdaq.ticker
+```
+---
+```python
+EXCHANGES = ["nyse", "nasdaq", "amex", "kraken"]
+base_path = "/data"
+
+for ex in EXCHANGES:
+    file_path = os.path.join(base_path, f"{ex}.ticker")
+    if os.path.exists(file_path):
+        os.remove(file_path)
+```
+---
+
+```
+.
+└── data
+    ├── 2025-07-23
+    │   ├── nyse.ticker
+    │   ├── nasdaq.ticker
+    | . |-- kraken.ticker
+    │   └── amex.ticker
+    ├── 2025-07-24
+    │   ├── nyse.ticker
+    │   ├── nasdaq.ticker
+    │   └── amex.ticker
+    └── 2025-07-25
+        ├── nyse.ticker
+        ├── nasdaq.ticker
+        └── amex.ticker
+```
+---
+```python
+import os
+
+EXCHANGES = ["nyse", "nasdaq", "amex", "kraken"]
+BASE_DIR = "/data"
+
+for entry in os.listdir(BASE_DIR):
+    day_dir = os.path.join(BASE_DIR, entry)
+    if os.path.isdir(day_dir):
+        for ex in EXCHANGES:
+            file_path = os.path.join(day_dir, f"{ex}.ticker")
+            if os.path.exists(file_path):
+                os.remove(file_path)
+                print(f"Deleted: {file_path}")
+
+```
+---
 # <!--fit--> To Be Continued ...
 
 ---
