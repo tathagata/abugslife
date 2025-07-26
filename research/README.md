@@ -6,3 +6,6 @@
 
 
 [NotebookLLM](https://notebooklm.google.com/notebook/76d575af-bca0-4fc2-b7d0-60d4268e34de)
+
+
+https://www.businessinsider.com/replit-ceo-apologizes-ai-coding-tool-delete-company-database-2025-7

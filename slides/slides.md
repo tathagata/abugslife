@@ -278,12 +278,19 @@ _hasn't this always been like that?_
 
 ---
 <!-- _class: split -->
-![bg left fit](../assets/01_fast_cheap_right.png)
+![bg left fit](../assets/01_pr.png)
 # <span style="color:red;">Mo code, mo bugs</span>
-➡️ Unrealistic Deadlines
-➡️ Tradeoffs
-➡️ Ever changing landscape
+➡️ blame the author
+➡️ blame the ~~author~~ reviewer
+➡️ blame the ~~author~~ ~~reviewer~~ agent?
 
+---
+
+![bg left fit](../assets/01_agent_gone_wild.png)
+
+---
+
+![bg fit](../assets/01_replit.png)
 
 ---
 # 🐞 Right Mindset
