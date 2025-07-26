@@ -314,7 +314,7 @@ DORA
 DevOps Research and Assessment 
 
 ---
-## How often do you deploy?
+## How often do you deploy to prod?
 
 | **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
 |---------------------------|---------------------------|----------------------------|----------------------------|
@@ -324,7 +324,7 @@ DevOps Research and Assessment
 
 ---
 
-## Why you cannot deploy faster?
+## Why can't you deploy more often?
 <!-- _class: split -->
 | **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
 |---------------------------|---------------------------|----------------------------|----------------------------|
