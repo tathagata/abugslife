@@ -140,7 +140,8 @@ for entry in os.listdir(BASE_DIR):
 ---
 
 ![alt text](../assets/01_lseg.png)
-Tathagata Dasgupta (T)
+# A Bug's Life
+by Tathagata Dasgupta (T)
 Low Latency Engineering
 
 ---
