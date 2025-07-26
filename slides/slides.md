@@ -381,9 +381,8 @@ DevOps Research and Assessment
 ---
 
 <!-- _class: split -->
-![bg left fit](../assets/01_shift_left.png)
-* Test Driven Development
-* Pair Programming
+![bg fit](../assets/01_shift_left.png)
+
 
 ---
 
@@ -392,6 +391,13 @@ DevOps Research and Assessment
 ---
 
 ![shiftleft](../assets/01_shiftleft.png)
+
+---
+<!-- _class: split -->
+![bg left fit](../assets/01_shiftleft.png)
+# Sounds familiar?
+- **Test Driven Development**
+- **Pair Programming**
 
 ---
 <!-- _class: split -->
