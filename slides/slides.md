@@ -56,6 +56,7 @@ _This statement has been notarized by the Ministry of Totally Serious Bugs._
 ![bg fit](../assets/01_slack_09.png)
 
 ---
+
 ![bg fit](../assets/01_slack_10.png)
 
 ---
@@ -77,13 +78,17 @@ _This statement has been notarized by the Ministry of Totally Serious Bugs._
 ---
 
 ![bg fit](../assets/01_slack_14.png)
+
 ---
+
 ```bash
 /data/nyse.ticker
 /data/amex.ticker
 /data/nasdaq.ticker
 ```
+
 ---
+
 ```python
 EXCHANGES = ["nyse", "nasdaq", "amex", "kraken"]
 base_path = "/data"
@@ -93,6 +98,7 @@ for ex in EXCHANGES:
     if os.path.exists(file_path):
         os.remove(file_path)
 ```
+
 ---
 
 ```
@@ -112,7 +118,9 @@ for ex in EXCHANGES:
         ├── nasdaq.ticker
         └── amex.ticker
 ```
+
 ---
+
 ```python
 import os
 
