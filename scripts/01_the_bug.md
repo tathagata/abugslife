@@ -73,7 +73,7 @@ Can the SRE team check? @manny"
 Manny, the SRE on support, has been secretly lurking on the chat and jumps in.  
 
 **SLIDE**  
-"Lets calm down here a bit - health checks as all pods are healthy, no crashes anywhere!",  
+"Lets calm down here a bit - health checks are passing - all pods are healthy, no crashes anywhere!",  
 
 Rosie loses it. Her team will be blamed for this - but it must be the backend team like last time.  
 **SLIDE**  
