@@ -158,12 +158,11 @@ Low Latency Engineering Group
 <!-- _class: split -->
 
 ![bg fit left:50%](../assets/01_front_row_seats.png)
-✅ Patch deployed ➡️ Crisis averted
+✅ Patch deployed ➡️ bug is fixed
 
 
 ---
 ![bg fit left:50%](../assets/01_front_row_seats.png)
-                ➡️ Will it come back? 
                 ➡️ What else needs a patch?
                  
 
@@ -448,19 +447,19 @@ DevOps Research and Assessment
 |**Team**| **What**                          |
 |----|-------------------------------------|
 |SRE | Alert on 85% of disk usage & Runbook update             | 
-|Data| Error handling, move purger job to Airflow data  |
+|Data| Add tests and error handling, move purger job to Airflow  |
 |UI  | Improve Signal to Noise ratio, refactoring third party lib errors         |
-|C++ | Support rotation calendar update        |
+|C++ | Update Support rotation calendar, ensure secondary support person        |
 
 
 ---
 # Long Term
 
 | **Team** | **Focus**                                                                 | **DORA Metric**         |
-|----------|-----------------------------------------------------------------------------|-------------------------|
-| SRE      | Faster and reliable updates to production systems                          | Deployment Frequency    |
-| C++      | Reduce build times and improve testing efficiency                          | Lead Time for Changes   |
+|----------|----------------------------------------------------------------------------|-------------------------|
+| SRE      | Notifications for releases and drift detection to keep everyone informed   | Deployment Frequency    |
+| C++      | Reduce build times by 5%                                                   | Lead Time for Changes   |
 | Data     | Enhance data quality in non-production environments                        | Change Failure Rate     |
-| UI       | Implement synthetic UI tests, that will validate post release validations  | Time to Restore Service |
+| UI       | Implement synthetic UI tests for post release validations                  | Time to Restore Service |
 
 ---

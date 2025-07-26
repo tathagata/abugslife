@@ -29,7 +29,7 @@ Hours later, and a lot white boarding later, the teams came up with some short t
 
 The SREs stepped in to put alerts around disk usage and a runbooks to safely remove old data
 The Data team decided having an out of band purge process was a bad design - and would handle the whole processing in Airflow.
-The UI team was happy to use this opprotunity to clean up some logging 
+The UI team was happy to use this opportunity to clean up some logging 
 Since most of the C++ team was at a conference, it was decided they would update their support pages
 
 For the long term the SRE decided their focus was going to be deployment frequency - no surprise there.
@@ -39,9 +39,13 @@ For the C++ team, brining down C++ build times were the top priority.
 
 ## Closing Thoughts
 
-The incident was a wake-up call for the organization. 
-It highlighted the need for better monitoring, robust error handling, and improved cross-team coordination. 
-The short-term actions address immediate gaps, while the long-term focus aims to build resilience and prevent future incidents. 
-The question "What else needs a patch?" serves as a reminder that fixing the code is only part of the solution—the real work lies in addressing the underlying processes and systems.
+A bug fix is rarely a quick code change.
+A bug's life is a lesson in software development.
+Continuous Questioning - What else needs a patch?
+Is it our architecture? Our processes? Or is it us?
+Technology will keep moving faster than we can keep up with.
+Crisis will always be a part of software development.
+How we respond to change and crisis, will define us and our products.
+So lets be little kind to each other, and also ourselves.
 
 
