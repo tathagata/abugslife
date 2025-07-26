@@ -83,19 +83,6 @@ _This statement has been notarized by the Ministry of Totally Serious Bugs._
 /data/amex.ticker
 /data/nasdaq.ticker
 ```
-
----
-
-```python
-EXCHANGES = ["nyse", "nasdaq", "amex", "kraken"]
-base_path = "/data"
-
-for ex in EXCHANGES:
-    file_path = os.path.join(base_path, f"{ex}.ticker")
-    if os.path.exists(file_path):
-        os.remove(file_path)
-```
-
 ---
 
 ```
@@ -115,6 +102,19 @@ for ex in EXCHANGES:
         ├── nasdaq.ticker
         └── amex.ticker
 ```
+
+---
+
+```python
+EXCHANGES = ["nyse", "nasdaq", "amex", "kraken"]
+base_path = "/data"
+
+for ex in EXCHANGES:
+    file_path = os.path.join(base_path, f"{ex}.ticker")
+    if os.path.exists(file_path):
+        os.remove(file_path)
+```
+
 
 ---
 

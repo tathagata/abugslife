@@ -125,11 +125,11 @@ Another 30 minutes crawl by.
 Yes! he has done it again - found the bug that caused the outage!  
 He quickly replies 
 "I think I found the smoking gun!  
-The disk where the job is writing is full, so its crashing but it keeps failing silently and retrying ...",
+The disk where the job is writing is full, so its crashing but it keeps failing silently and retrying ...",  
 
-Manny says
-"We received no disk pressure alerts!",
-Slim replies
+Manny says  
+"We received no disk pressure alerts!"  
+Slim replies   
 
 "This disk was kept clean by a cron job on the host itself  
 and there is no disk pressure alerts.  
@@ -138,27 +138,31 @@ now it should be done within a couple of hours!"
 
 I can explain during postmortem!   
 
-Later that day during the postmortem
-Slim takes the lead and explains what he found.
+Later that day during the postmortem  
+Slim takes the lead and explains what he found  
 
-I think I found the smoking gun ...
+I think I found the smoking gun ...  
 
-Recently we got a huge performance boost from sharding the ticker file
-so instead of one large file, we now write multiple smaller files by date and exchange.
+Recently we got a huge performance boost from sharding the ticker file  
+so instead of one large file, we now write multiple smaller files by date and exchange  
 
-Unfortunately, the clean up job that removes the old files was not updated in this change as it was not in the same code repo!
-So the copilot missed it.
+Unfortunately, the clean up job that removes the old files was not updated in this change as it was not in the same code repo!   
+So the copilot missed it.   
 
-I've patched that piece of code, so we can call this a day.
-
-
-Manny, looks at Slim and asks
-
-Your patch has fixed the bug. But what else needs a patch?
+I just vibe coded the patch and pushed it to prod  
+so we can call this a day     
 
 
-Slim pauses, and thinks for a moment and asks
-    What do you mean? I've deployed the fix, and the dashboards are back up. What else could need a patch?
+Manny, looks at Slim and asks  
+
+Your patch has fixed the bug. But what else needs a patch?  
+
+
+Slim pauses, and thinks for a moment and asks  
+What do you mean?  
+I've deployed the fix  
+athe dashboards are back up  
+What else could need a patch?   
 
 
 To be Continued ... 
