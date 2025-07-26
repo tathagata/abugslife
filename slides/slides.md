@@ -218,6 +218,51 @@ Low Latency Engineering Group
 # 🐞 The New Normal  
 <span style="color:red;">_Why_</span> change our attitude toward bugs?
 
+
+---
+<!-- _class: split -->
+
+# <span style="color:red;">BUGS == LOSS</span>
+
+![bg left fit](../assets/01_order_vs_got.png)
+➡️ **value to the customer**
+
+
+---
+
+<!-- _class: split -->
+![bg left fit](../assets/01_knight_capital.png)
+# <span style="color:red;">BUGS == LOSS</span>
+➡️ value to the customer 
+➡️ **financial**, reputation, human life
+
+
+---
+
+<!-- _class: split; -->
+![bg left fit](../assets/01_reputation.png)
+# <span style="color:red;">BUGS == LOSS</span>
+➡️ value to the customer 
+➡️ financial, **reputation**, human life
+
+---
+
+<!-- _class: split -->
+![bg left fit](../assets/01_boeing.png)
+# <span style="color:red;">BUGS == LOSS</span>
+➡️ value to the customer 
+➡️ financial, reputation, **human life**
+
+---
+<!-- _class: split -->
+![bg left fit](../assets/01_blame.png)
+# <span style="color:red;">BUGS == BLAME</span>
+➡️ value to the customer 
+➡️ financial, reputation, human life
+➡️ **pride, ownership, craftsmanship**
+
+_hasn't this always been like that?_
+
 ---
 
 ![bg vertical h:300](../assets/01_anthropic.png)
@@ -238,50 +283,6 @@ Low Latency Engineering Group
 ➡️ Unrealistic Deadlines
 ➡️ Tradeoffs
 ➡️ Ever changing landscape
-
-
----
-<!-- _class: split -->
-
-# <span style="color:red;">LOSS</span>
-
-![bg left fit](../assets/01_order_vs_got.png)
-➡️ **value to the customer**
-
-
----
-
-<!-- _class: split -->
-![bg left fit](../assets/01_knight_capital.png)
-# <span style="color:red;">LOSS</span>
-➡️ value to the customer 
-➡️ **financial**, reputation, human life
-
-
----
-
-<!-- _class: split; -->
-![bg left fit](../assets/01_reputation.png)
-# <span style="color:red;">LOSS</span>
-➡️ value to the customer 
-➡️ financial, **reputation**, human life
-
----
-
-<!-- _class: split -->
-![bg left fit](../assets/01_boeing.png)
-# <span style="color:red;">LOSS</span>
-➡️ value to the customer 
-➡️ financial, reputation, **human life**
-➡️ pride, ownership, craftsmanship
-
----
-<!-- _class: split -->
-![bg left fit](../assets/01_blame.png)
-# <span style="color:red;">BLAME</span>
-➡️ value to the customer 
-➡️ financial, reputation, human life
-➡️ **pride, ownership, craftsmanship**
 
 
 ---
@@ -466,9 +467,15 @@ DevOps Research and Assessment
 
 A bug fix is rarely a quick code change.
 A bug's life is a lesson in software development.
-Continuous Questioning - What else needs a patch?
+
+_What else needs a patch_?
 Is it our architecture? Our processes? Or is it us?
+
 Technology will keep moving faster than we can keep up with.
 Crisis will always be a part of software development.
+
 How we respond to change and crisis, will define us and our products.
-So lets be little kind to each other, and also ourselves.
+So lets be little kind to each other, and also to ourselves.
+
+---
+
