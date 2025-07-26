@@ -3,6 +3,7 @@ marp: true
 theme: default
 # class: invert
 html: true
+paginate: true
 ---
 
 # <!--fit--> <span style="color:red;">Disclaimer</span>
@@ -44,9 +45,11 @@ _This statement has been notarized by the Ministry of Totally Serious Bugs._
 ![bg fit](../assets/01_slack_05.png)
 
 ---
+
 ![bg fit](../assets/01_slack_06.png)
 
 ---
+
 ![bg fit](../assets/01_slack_07.png)
 
 ---
