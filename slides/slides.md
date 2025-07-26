@@ -141,7 +141,7 @@ for entry in os.listdir(BASE_DIR):
 
 ![alt text](../assets/01_lseg.png)
 Tathagata Dasgupta (T)
-Low Latency Engineering Group
+Low Latency Engineering
 
 ---
 
