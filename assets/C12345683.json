@@ -1,0 +1,113 @@
+{
+    "meta": {
+        "last_id": 16
+    },
+    "1753364138.000001": {
+        "type": "message",
+        "user_id": "USLACKBOT",
+        "text": "OpsGenie: *P1: Goldkern Husks: hopper@gh.com Dashboards not loading!!!*",
+        "ts": "1753364138"
+    },
+    "1753364738.000002": {
+        "type": "message",
+        "user_id": "W10000007",
+        "text": "*@suppurt-ui* All GH dashboards are down. \nSearched Confluence, StackExchange, ServiceNow, Runbooks! \nNeed someone from the UI team to take a look!",
+        "ts": "1753364738.000002"
+    },
+    "1753364858.000003": {
+        "type": "message",
+        "user_id": "W10000003",
+        "text": "Is it just one client?\nHow many users impacted??\n Any screenshots??? ... \nDid you screenshare with the user??? *cc:@rosie,@atta*",
+        "ts": " 1753364858.000003"
+    },
+    "1753537506.000004": {
+        "type": "message",
+        "user_id": "W10000008",
+        "text": "Did you ask them to clear their browser cache?\nAre they _even_ using a supported browser?\nIt could be _their_ firewalls are blocking websockets!",
+        "ts": " 1753537506.000004"
+    },
+    "1753538106.000004": {
+        "type": "message",
+        "user_id": "W10000007",
+        "text": "Ok - checked with the client. \nAll good on their end!\n Hopper is escalating this, as 15 mins SLA was breached!", 
+        "ts": "1753538106.000004"
+    },
+    "1753538161.000004": {
+        "type": "message",
+        "user_id": "W10000008",
+        "text": "Argh! I've been looking through the screenshots and logs,\nits just third party libraries errors I've been asking the team to clean up for weeks!",
+        "ts": " 1753538161.000004"
+    },
+    "1753538401.000004": {
+        "type": "message",
+        "user_id": "W10000002",
+        "text": "*@all* *Hopper has escalated to Ant Intelligence execs*.\n We need coordinated updates - WHY is our status page still showing healthy?\n Can the SRE team check? @manny",
+        "ts": "1753538401.000004"
+    },
+    "1753538461.000005": {
+        "type": "message",
+        "user_id": "W10000005",
+        "text": "Lets calm down here a bit - health checks as all pods are healthy, no crashes anywhere!",
+        "ts": "1753538461.000005"
+    },
+    "1753538521.000004": {
+        "type": "message",
+        "user_id": "W10000008",
+        "text": "I'm sure the C++ team released over the weekend without telling us! *@Dot,@atta* Why is no one from C++ team here?",  
+        "ts": " 1753538521.000004"
+    },
+    "1753538530.000002": {
+        "type": "message",
+        "user_id": "W10000007",
+        "text": "Everyone is at CPPCon this week!",
+        "ts": "1753538530.000002"
+    },
+    "1753539310.000005": {
+        "type": "message",
+        "user_id": "W10000005",
+        "text": "There were no releases. I just checked Argo. But something interesting...\n the processor pod logs have a json field - `rows_read: 0` on every msg!", 
+        "ts": "1753539310.000005"
+    },
+    "1753539370.000001": {
+        "type": "message",
+        "user_id": "USLACKBOT",
+        "text": "OpsGenie: *P1: Goldkern Husks: hopper@gh.com Any Progress yet? What's the ETA for fix???*",
+        "ts": "1753539370"
+    },
+    "1753539375.000004": {
+        "type": "message",
+        "user_id": "W10000002",
+        "text": "*@all* This is all hands of deck. @Flik what's @manny saying? Can you check the onprem airflow cluster?",
+        "ts": "1753539375.000004"
+    },
+    "1753539610.000005": {
+        "type": "message",
+        "user_id": "W10000001",
+        "text": "Looks like the nightly ticker load job has *NOT* completed ... its stuck for 15 hours, generally gets done in 5 hours\n trying to find what's going on ",
+        "ts": "1753539610.000005"
+    },
+    "1753541710.000005": {
+        "type": "message",
+        "user_id": "W10000001",
+        "text": "I think I found the smoking gun! The disk where the job is writing is full, so its crashing but it keeps failing silently and retrying ...",
+        "ts": "1753541710.000005"
+    },
+    "1753541770.000005": {
+        "type": "message",
+        "user_id": "W10000005",
+        "text": "We received no disk pressure alerts!",
+        "ts": "1753541770.000005"
+    },
+    "1753541890.000005": {
+        "type": "message",
+        "user_id": "W10000001",
+        "text": "This disk was kept clean by a cron job on the host itself and there is no disk pressure monitors.\n I've cleaned up manually and rerun with more workers, now it should be done within a couple of hours!",
+        "ts": "1753541890.000005"
+    },
+    "1753541890.000006": {
+        "type": "message",
+        "user_id": "W10000001",
+        "text": "I can explain during postmortem!",
+        "ts": "1753541890.000006"
+    }  
+}
