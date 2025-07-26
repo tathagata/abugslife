@@ -30,6 +30,43 @@ _This statement has been notarized by the Ministry of Totally Serious Bugs._
 
 ---
 
+![bg fit](../assets/01_slack_02.png)
+
+---
+
+![bg fit](../assets/01_slack_03.png)
+
+---
+
+![bg fit](../assets/01_slack_04.png)
+
+---
+![bg fit](../assets/01_slack_05.png)
+
+---
+![bg fit](../assets/01_slack_06.png)
+
+---
+![bg fit](../assets/01_slack_07.png)
+
+---
+![bg fit](../assets/01_slack_08.png)
+
+---
+![bg fit](../assets/01_slack_09.png)
+
+---
+![bg fit](../assets/01_slack_10.png)
+
+---
+
+![bg fit](../assets/01_slack_11.png)
+
+---
+
+![bg fit](../assets/01_slack_12.png)
+
+---
 # <!--fit--> To Be Continued ...
 
 ---
