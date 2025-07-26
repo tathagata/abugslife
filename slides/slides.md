@@ -44,9 +44,6 @@ _This statement has been notarized by the Ministry of Totally Serious Bugs._
 ---
 ![bg fit](../assets/01_slack_05.png)
 
----
-
-![bg fit](../assets/01_slack_06.png)
 
 ---
 

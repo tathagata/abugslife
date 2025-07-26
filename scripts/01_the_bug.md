@@ -1,27 +1,32 @@
 *Ding.*
 
 It’s 9:35 a.m. on a Monday morning.  
-Fifty-seven floors above the relentless pulse of New York’s financial district, it was just another typical day at Ant Intelligence, a leading market data provider.  
+Fifty-seven floors above the relentless pulse of New York’s financial district  
+it was just another day at Ant Intelligence, a leading market data provider.  
 The air was thick with the scent of fresh coffee and  
 the relentless crackling of mechanical keyboards resonated thru the open-plan office.  
 
-Slim, from L1 support had barely taken the first sip of coffee as he notices an alert on the support channel.
-
-> OpsGenie: “P1: Goldkern Husks: Dashboards not loading!!!”
-
-Goldkern Husks is the biggest commodities trader on the street.
-Hopper, their head of trading, is a legend in the industry.
-He is not known for his patience.
-His name that sends chills through all of L1 support. 
-
-
-Slim scans through all his old notes, old jira tickets ...
-After 10 minutes of frantic searching “dashboard outage.” "Empty dashboard".- he has nothing. 
-He tags the ui team in desperation.
+Slim, from L1 support had barely taken the first sip of his coffee as he notices an alert on the support channel.
 
 **SLIDE**
 
-All GH dashboards are down. \nSearched Confluence, StackExchange, ServiceNow, Runbooks! \nNeed someone from the UI team to take a look!
+> OpsGenie: “P1: Goldkern Husks: Dashboards not loading!!!”
+
+Goldkern Husks is the biggest commodities trader on the street.  
+Hopper, their head of trading, is a legend in the industry.  
+He is not known for his patience.  
+His name that sends chills through all of L1 support.  
+
+
+Slim scans through all his old notes, old jira tickets ...  
+After 10 minutes of franticly searching for “dashboard outage.” "Empty dashboard".- he has nothing.   
+He tags the ui team in desperation.  
+
+**SLIDE**
+
+All GH dashboards are down.  
+Searched Confluence, StackExchange, ServiceNow, Runbooks!  
+Need someone from the UI team to take a look!
 
 Dot, the incident manager, jumps in with a hundred questions!
 
@@ -32,27 +37,26 @@ How many users impacted??
 Any screenshots??
 Did you screenshare with the user??? *cc:@rosie,@atta*",
 
-Dot tags the UI team lead, Rosie and Atta, the product owner.
-Rosie responds with in minutes, with even more questions.
+Dot has tagged the UI team lead, Rosie.  
+Atta, the product owner.  
+Rosie responds with in minutes, with even more questions.  
 
-**SLIDE**
+"Did you ask them to clear their browser cache?  
+Are they _even_ using a supported browser?  
+It could be _their_ firewalls are blocking websockets!"  
 
-"Did you ask them to clear their browser cache?
-Are they _even_ using a supported browser?
-It could be _their_ firewalls are blocking websockets!",
+Slim takes a deep breath and reaches out to the client on zoom.    
 
-Slim takes a deep breath and starts tries to reach out to the client on the phone.
-
-After 10 minutes of back and forth, he finally has answers, and sends them to Roise.
-Now he has to deliver the bad news to the team.
+After 10 minutes of back and forth, he finally has answers, and sends them to Roise.  
+Now, he has to deliver the bad news to the whole team.
 
 **SLIDE**
 
 Ok - checked with the client.
 All good on their end!
-Hopper is escalating this, as 15 mins SLA was breached!", 
+Hopper is escalating this, as 15 mins SLA was breached!"   
 
-This frustrates, Rosie - nothing useful what Slim has found.
+This frustrates, Rosie - Slim has found nothing useful!
 
 **SLIDE**
 
@@ -62,7 +66,9 @@ This frustrates, Rosie - nothing useful what Slim has found.
 
 Atta brings in more bad news.
 
-"*@all* *Hopper has escalated to Ant Intelligence execs*.\n We need coordinated updates - WHY is our status page still showing healthy?\n Can the SRE team check? @manny",
+"*@all* *Hopper has escalated to Ant Intelligence execs*.  
+We need coordinated updates - WHY is our status page still showing healthy  
+Can the SRE team check? @manny"   
 
 Manny, the SRE on support, has been secretly lurking on the chat and jumps in.
 
@@ -73,46 +79,64 @@ Rosie loses it. Her team will be blamed for this - but it must be the backend te
 **SLIDE**
 
 "I'm sure the C++ team released over the weekend without telling us! *@Dot,@atta* Why is no one from C++ team here?",  
+
+Slim, incidentally knew the answer, as he had tried to reach out to them earlier.   
+
 **SLIDE**
-Slim, knew where the Cpp team was, as he had tried to reach out to them earlier.
+
 "Everyone is at CPPCon this week!",
 
 **SLIDE**
 A few mintues roll by, and Manny replies.
 
-"There were no releases. I just checked Argo. But something interesting...\n the processor pod logs have a json field - `rows_read: 0` on every msg!", 
+"There were no releases.  
+I just checked Argo.  
+But something interesting...  
+the processor pod logs have a json field - `rows_read: 0` on every msg!",  
 **SLIDE**
 
 Right then, the slack bot brings in another alert from Hopper
 
 "OpsGenie: *P1: Goldkern Husks: hopper@gh.com Any Progress yet? What's the ETA for fix???*",
-**SLIDE**
 
-Atta, now tags the data team lead Flick. He is a real genius, and always trying to do something fancy ...
-**READ SLIDE**
+Atta, now tags the data team lead, Flick.  
+He is a real genius, and always trying to do something fancy ...
 
 "*@all* This is all hands of deck. @Flik what's @manny saying? Can you check the onprem airflow cluster?",
-**SLIDE**
+
+
 Flick, is always plugged into slack, he types in checking ... but does not hit send.  
 Instead he checks his DataDog dashboards for the Airflow cluster.  
+
 **SLIDE**
-Just as he suspected, the nightly ticker load batch has not completed yet.
-It should have completed before markets opened.
-The job is stuck in a loop. It keeps trying to write its output file, but the disk is full.
-"Looks like the nightly ticker load job has *NOT* completed ... its stuck for 15 hours, generally gets done in 5 hours\n trying to find what's going on ",
+
+Just as he suspected, the nightly ticker load batch has not completed yet.  
+It should have completed before markets opened.  
+
+
+
 **SLIDE**
-Another 30 minutes crawl by.
-Yes! he has done it again - found the bug that caused the outage!
-He quickly replies
-"I think I found the smoking gun! The disk where the job is writing is full, so its crashing but it keeps failing silently and retrying ...",
+
+"Looks like the nightly ticker job has *NOT* completed ...  
+its stuck for 15 hours, generally gets done in 5 hours  
+ trying to find what's going on   
+
+Another 30 minutes crawl by.  
+Yes! he has done it again - found the bug that caused the outage!  
+He quickly replies 
+"I think I found the smoking gun!  
+The disk where the job is writing is full, so its crashing but it keeps failing silently and retrying ...",
 
 Manny says
 "We received no disk pressure alerts!",
 Slim replies
 
-"This disk was kept clean by a cron job on the host itself and there is no disk pressure alerts.\n I've cleaned up manually and rerun with more workers, now it should be done within a couple of hours!",
+"This disk was kept clean by a cron job on the host itself  
+and there is no disk pressure alerts.  
+I've cleaned up manually and rerun with more workers,   
+now it should be done within a couple of hours!"  
 
-"I can explain during postmortem!",
+I can explain during postmortem!   
 
 Later that day during the postmortem
 Slim takes the lead and explains what he found.
