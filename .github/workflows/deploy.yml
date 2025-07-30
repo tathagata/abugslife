@@ -10,11 +10,8 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout repository
@@ -29,14 +26,16 @@ jobs:
         run: npm install -g @marp-team/marp-cli
 
       - name: Build slides
-        run: marp slides/slides.md --html --output slides/slides.html
+        run: mkdir gh-pages && marp slides/slides.md --html --output gh-pages/index.html
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
+      - name: Copy assets
+        run: cp -r assets gh-pages/
+
+      - name: Upload artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./slides
+          path: gh-pages
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
