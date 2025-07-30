@@ -23,57 +23,57 @@ _This statement has been notarized by the Ministry of Totally Serious Bugs._
 
 <!-- _class: split -->
 
-![bg left:60%](../assets/01_office.png)
+![bg left:60%](assets/01_office.png)
 
 ---
 
-![bg fit](../assets/01_slack_01.png)
+![bg fit](assets/01_slack_01.png)
 
 ---
 
-![bg fit](../assets/01_slack_02.png)
+![bg fit](assets/01_slack_02.png)
 
 ---
 
-![bg fit](../assets/01_slack_03.png)
+![bg fit](assets/01_slack_03.png)
 
 ---
 
-![bg fit](../assets/01_slack_04.png)
+![bg fit](assets/01_slack_04.png)
 
 ---
-![bg fit](../assets/01_slack_05.png)
+![bg fit](assets/01_slack_05.png)
 
-
----
-
-![bg fit](../assets/01_slack_07.png)
-
----
-![bg fit](../assets/01_slack_08.png)
-
----
-![bg fit](../assets/01_slack_09.png)
 
 ---
 
-![bg fit](../assets/01_slack_10.png)
+![bg fit](assets/01_slack_07.png)
+
+---
+![bg fit](assets/01_slack_08.png)
+
+---
+![bg fit](assets/01_slack_09.png)
 
 ---
 
-![bg fit](../assets/01_slack_11.png)
+![bg fit](assets/01_slack_10.png)
 
 ---
 
-![bg fit](../assets/01_slack_12.png)
+![bg fit](assets/01_slack_11.png)
 
 ---
 
-![bg fit](../assets/01_airflow.png)
+![bg fit](assets/01_slack_12.png)
 
 ---
 
-![bg fit](../assets/01_slack_15.png)
+![bg fit](assets/01_airflow.png)
+
+---
+
+![bg fit](assets/01_slack_15.png)
 
 
 ---
@@ -139,25 +139,25 @@ for entry in os.listdir(BASE_DIR):
 
 ---
 
-![alt text](../assets/01_lseg.png)
+![alt text](assets/01_lseg.png)
 # A Bug's Life
 by Tathagata Dasgupta (T)
 Low Latency Engineering
 
 ---
 
-![bg fit left:60%](../assets/01_dev_sre.png)
+![bg fit left:60%](assets/01_dev_sre.png)
   
 
 ---
 <!-- _class: split -->
 
-![bg fit left:50%](../assets/01_front_row_seats.png)
+![bg fit left:50%](assets/01_front_row_seats.png)
 ✅ Patch deployed ➡️ bug is fixed
 
 
 ---
-![bg fit left:50%](../assets/01_front_row_seats.png)
+![bg fit left:50%](assets/01_front_row_seats.png)
                 ➡️ What else needs a patch?
                  
 
@@ -219,14 +219,14 @@ Low Latency Engineering
 
 # <span style="color:red;">BUGS == LOSS</span>
 
-![bg left fit](../assets/01_order_vs_got.png)
+![bg left fit](assets/01_order_vs_got.png)
 ➡️ **value to the customer**
 
 
 ---
 
 <!-- _class: split -->
-![bg left fit](../assets/01_knight_capital.png)
+![bg left fit](assets/01_knight_capital.png)
 # <span style="color:red;">BUGS == LOSS</span>
 ➡️ value to the customer 
 ➡️ **financial**, reputation, human life
@@ -235,7 +235,7 @@ Low Latency Engineering
 ---
 
 <!-- _class: split; -->
-![bg left fit](../assets/01_reputation.png)
+![bg left fit](assets/01_reputation.png)
 # <span style="color:red;">BUGS == LOSS</span>
 ➡️ value to the customer 
 ➡️ financial, **reputation**, human life
@@ -243,14 +243,14 @@ Low Latency Engineering
 ---
 
 <!-- _class: split -->
-![bg left fit](../assets/01_boeing.png)
+![bg left fit](assets/01_boeing.png)
 # <span style="color:red;">BUGS == LOSS</span>
 ➡️ value to the customer 
 ➡️ financial, reputation, **human life**
 
 ---
 <!-- _class: split -->
-![bg left fit](../assets/01_blame.png)
+![bg left fit](assets/01_blame.png)
 # <span style="color:red;">BUGS == BLAME</span>
 ➡️ value to the customer 
 ➡️ financial, reputation, human life
@@ -260,20 +260,20 @@ _hasn't this always been like that?_
 
 ---
 
-![bg vertical h:300](../assets/01_anthropic.png)
-![bg h:300](../assets/01_meta.png)
-![bg h:200](../assets/01_microsoft.png)
-![bg h:300](../assets/01_google.png)
+![bg vertical h:300](assets/01_anthropic.png)
+![bg h:300](assets/01_meta.png)
+![bg h:200](assets/01_microsoft.png)
+![bg h:300](assets/01_google.png)
 
 ---
 <!-- _class: split -->
-![bg left fit](../assets/01_vibecoding.png)
+![bg left fit](assets/01_vibecoding.png)
 ⚡ Coding at the speed of thought
 🦥 Debugging at the speed of sloth 
 
 ---
 <!-- _class: split -->
-![bg left fit](../assets/01_pr.png)
+![bg left fit](assets/01_pr.png)
 # <span style="color:red;">Mo code, mo bugs</span>
 ➡️ blame the author
 ➡️ blame the ~~author~~ reviewer
@@ -281,11 +281,11 @@ _hasn't this always been like that?_
 
 ---
 
-![bg left fit](../assets/01_agent_gone_wild.png)
+![bg left fit](assets/01_agent_gone_wild.png)
 
 ---
 
-![bg fit](../assets/01_replit.png)
+![bg fit](assets/01_replit.png)
 
 ---
 # 🐞 Right Mindset
@@ -300,7 +300,7 @@ _hasn't this always been like that?_
 
 ---
 <!-- _class: split -->
-![bg left fit](../assets/01_gaming_metrics.png)
+![bg left fit](assets/01_gaming_metrics.png)
 > If you can't measure it, you can't improve it.
 * code coverage
 * test pass rate
@@ -310,7 +310,7 @@ _hasn't this always been like that?_
 
 # Yet more metrics
 <!-- _class: split -->
-![bg left fit](../assets/dora-swiper.gif)
+![bg left fit](assets/dora-swiper.gif)
 DORA
 DevOps Research and Assessment 
 
@@ -382,27 +382,27 @@ DevOps Research and Assessment
 ---
 
 <!-- _class: split -->
-![bg fit](../assets/01_shift_left.png)
+![bg fit](assets/01_shift_left.png)
 
 
 ---
 
-![traditional](../assets/01_traditional.png)
+![traditional](assets/01_traditional.png)
 
 ---
 
-![shiftleft](../assets/01_shiftleft.png)
+![shiftleft](assets/01_shiftleft.png)
 
 ---
 <!-- _class: split -->
-![bg left fit](../assets/01_shiftleft.png)
+![bg left fit](assets/01_shiftleft.png)
 # Sounds familiar?
 - **Test Driven Development**
 - **Pair Programming**
 
 ---
 <!-- _class: split -->
-![bg left fit](../assets/01_shiftleft.png)
+![bg left fit](assets/01_shiftleft.png)
 # Deployments
 - **Blue Green, Canary**
 - **Synthetic Monitoring**
@@ -413,7 +413,7 @@ DevOps Research and Assessment
 
 
 <!-- _class: split -->
-![bg left fit](../assets/01_shiftleft.png)
+![bg left fit](assets/01_shiftleft.png)
 # Observability
 > Customer should not be part of your monitoring stack!
 - Actionable alerts, not noise
@@ -423,7 +423,7 @@ DevOps Research and Assessment
 
 ---
 
-![bg left fit](../assets/01_shiftleft.png)
+![bg left fit](assets/01_shiftleft.png)
 # Dev Experience
 > Happy devs ship better code 
 - DevContainers
@@ -431,7 +431,7 @@ DevOps Research and Assessment
 - Meta prompts (CLAUDE.md)
 
 ---
-![bg left fit](../assets/01_shiftleft.png)
+![bg left fit](assets/01_shiftleft.png)
 # Partnership 
 > bugs that happen before the code
 - Empathy
@@ -441,7 +441,7 @@ DevOps Research and Assessment
 ---
 <!-- _class: split -->
 
-![bg left:60%](../assets/01_office.png)
+![bg left:60%](assets/01_office.png)
 
 ---
 
@@ -487,3 +487,4 @@ So lets be little kind to each other, and also to ourselves.
 
 ---
 
+![bg fit](assets/01_speakers_lounge.png)
