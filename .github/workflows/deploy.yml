@@ -29,7 +29,7 @@ jobs:
         run: mkdir gh-pages && marp slides/slides.md --html --output gh-pages/index.html
 
       - name: Copy assets
-        run: cp -r assets gh-pages/
+        run: cp -r slides/assets gh-pages/
 
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v3
