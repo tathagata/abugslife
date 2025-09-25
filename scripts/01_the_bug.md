@@ -6,11 +6,15 @@ it was just another day at Ant Intelligence, a leading market data provider.
 The air was thick with the scent of fresh coffee and  
 the relentless crackling of mechanical keyboards resonated thru the open-plan office.  
 
+**SLIDE**  
+
 Slim, from L1 support had barely taken the first sip of his coffee as he notices an alert on the support channel.  
 
 **SLIDE**  
 
 > OpsGenie: “P1: Goldkern Husks: Dashboards not loading!!!”  
+
+**SLIDE**  
 
 Goldkern Husks is the biggest commodities trader on the street.  
 Hopper, their head of trading, is a legend in the industry.  
