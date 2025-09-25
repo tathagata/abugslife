@@ -1,5 +1,5 @@
 ---
-marp: true
+marp: false
 theme: default
 # class: invert
 html: true
@@ -68,6 +68,40 @@ _This statement has been notarized by the Ministry of Totally Serious Bugs._
 }
 </style>
 
+
+<div class="character-grid">
+  <div class="character-item">
+    <img src="assets/slim.png" alt="Slim">
+    <h3>Slim</h3>
+    <p>L1 Support</p>
+  </div>
+</div>
+
+---
+
+![bg fit](assets/01_slack_01.png)
+
+---
+
+<div class="character-grid">
+  <div class="character-item">
+    <img src="assets/slim.png" alt="Slim">
+    <h3>Slim</h3>
+    <p>L1 Support</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/hopper.png" alt="Hopper">
+    <h3>Hopper</h3>
+    <p>Client - Goldkern Husks</p>
+  </div>
+</div>
+
+---
+
+![bg fit](assets/01_slack_02.png)
+
+---
+
 <div class="character-grid">
   <div class="character-item">
     <img src="assets/slim.png" alt="Slim">
@@ -80,9 +114,121 @@ _This statement has been notarized by the Ministry of Totally Serious Bugs._
     <p>Client - Goldkern Husks</p>
   </div>
   <div class="character-item">
+    <img src="assets/dot.png" alt="Dot">
+    <h3>Dot</h3>
+    <p>Incident Manager</p>
+  </div>
+</div>
+
+---
+
+![bg fit](assets/01_slack_03.png)
+
+---
+
+<div class="character-grid">
+  <div class="character-item">
+    <img src="assets/slim.png" alt="Slim">
+    <h3>Slim</h3>
+    <p>L1 Support</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/hopper.png" alt="Hopper">
+    <h3>Hopper</h3>
+    <p>Client - Goldkern Husks</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/dot.png" alt="Dot">
+    <h3>Dot</h3>
+    <p>Incident Manager</p>
+  </div>
+  <div class="character-item">
     <img src="assets/atta.png" alt="Atta">
     <h3>Atta</h3>
+    <p>Product Owner</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/rosie.png" alt="Rosie">
+    <h3>Rosie</h3>
+    <p>UI Team Lead</p>
+  </div>
+</div>
+
+---
+
+![bg fit](assets/01_slack_04.png)
+
+---
+![bg fit](assets/01_slack_05.png)
+
+---
+
+![bg fit](assets/01_slack_07.png)
+
+---
+
+<div class="character-grid">
+  <div class="character-item">
+    <img src="assets/slim.png" alt="Slim">
+    <h3>Slim</h3>
+    <p>L1 Support</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/hopper.png" alt="Hopper">
+    <h3>Hopper</h3>
+    <p>Client - Goldkern Husks</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/dot.png" alt="Dot">
+    <h3>Dot</h3>
     <p>Incident Manager</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/atta.png" alt="Atta">
+    <h3>Atta</h3>
+    <p>Product Owner</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/rosie.png" alt="Rosie">
+    <h3>Rosie</h3>
+    <p>UI Team Lead</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/manny.png" alt="Manny">
+    <h3>Manny</h3>
+    <p>SRE Team</p>
+  </div>
+</div>
+
+---
+![bg fit](assets/01_slack_08.png)
+
+---
+
+![bg fit](assets/01_slack_09.png)
+
+---
+
+<div class="character-grid">
+  <div class="character-item">
+    <img src="assets/slim.png" alt="Slim">
+    <h3>Slim</h3>
+    <p>L1 Support</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/hopper.png" alt="Hopper">
+    <h3>Hopper</h3>
+    <p>Client - Goldkern Husks</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/dot.png" alt="Dot">
+    <h3>Dot</h3>
+    <p>Incident Manager</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/atta.png" alt="Atta">
+    <h3>Atta</h3>
+    <p>Product Owner</p>
   </div>
   <div class="character-item">
     <img src="assets/rosie.png" alt="Rosie">
@@ -95,51 +241,11 @@ _This statement has been notarized by the Ministry of Totally Serious Bugs._
     <p>SRE Team</p>
   </div>
   <div class="character-item">
-    <img src="assets/flik.png" alt="Flik">
-    <h3>Flik</h3>
-    <p>Data Team Lead</p>
-  </div>
-  <div class="character-item">
-    <img src="assets/dot.png" alt="Dot">
-    <h3>Dot</h3>
-    <p>Product Owner</p>
-  </div>
-  <div class="character-item">
     <img src="assets/heimlich.png" alt="Heimlich">
     <h3>Heimlich</h3>
     <p>Backend C++</p>
   </div>
 </div>
-
----
-
-![bg fit](assets/01_slack_01.png)
-
----
-
-![bg fit](assets/01_slack_02.png)
-
----
-
-![bg fit](assets/01_slack_03.png)
-
----
-
-![bg fit](assets/01_slack_04.png)
-
----
-![bg fit](assets/01_slack_05.png)
-
-
----
-
-![bg fit](assets/01_slack_07.png)
-
----
-![bg fit](assets/01_slack_08.png)
-
----
-![bg fit](assets/01_slack_09.png)
 
 ---
 
@@ -152,6 +258,51 @@ _This statement has been notarized by the Ministry of Totally Serious Bugs._
 ---
 
 ![bg fit](assets/01_slack_12.png)
+
+---
+
+<div class="character-grid">
+  <div class="character-item">
+    <img src="assets/slim.png" alt="Slim">
+    <h3>Slim</h3>
+    <p>L1 Support</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/hopper.png" alt="Hopper">
+    <h3>Hopper</h3>
+    <p>Client - Goldkern Husks</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/dot.png" alt="Dot">
+    <h3>Dot</h3>
+    <p>Incident Manager</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/atta.png" alt="Atta">
+    <h3>Atta</h3>
+    <p>Product Owner</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/rosie.png" alt="Rosie">
+    <h3>Rosie</h3>
+    <p>UI Team Lead</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/manny.png" alt="Manny">
+    <h3>Manny</h3>
+    <p>SRE Team</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/heimlich.png" alt="Heimlich">
+    <h3>Heimlich</h3>
+    <p>Backend C++</p>
+  </div>
+    <div class="character-item">
+    <img src="assets/flik.png" alt="Flik">
+    <h3>Flik</h3>
+    <p>Data Team Lead</p>
+  </div>
+</div>
 
 ---
 
@@ -401,6 +552,18 @@ DORA
 DevOps Research and Assessment 
 
 ---
+## DORA Metrics: What to Ask
+
+| **Metric**                 | **Key Question**                  |
+|----------------------------|-----------------------------------|
+| **Deployment Frequency**   | How often do we deploy to prod?   |
+| **Lead Time for Changes**  | What slows down our releases?     |
+| **Change Failure Rate**    | Why do our changes break things?  |
+| **Time to Restore Service**| How quickly do we recover?        |
+
+
+
+---
 ## How often do you deploy to prod?
 
 | **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
@@ -486,17 +649,17 @@ DevOps Research and Assessment
 - **Test Driven Development**
 - **Pair Programming**
 
+
 ---
-<!-- _class: split -->
+
 ![bg left fit](assets/01_shiftleft.png)
-# Deployments
-- **Blue Green, Canary**
-- **Synthetic Monitoring**
-- **Feature Flags**
-- **Chaos Engineering**
+# Dev Experience
+> Happy devs ship better code 
+- DevContainers
+- Pre-commit Hooks for Lint, Code Quality, Security Scanning
+- Meta prompts (CLAUDE.md)
 
 ---
-
 
 <!-- _class: split -->
 ![bg left fit](assets/01_shiftleft.png)
@@ -508,13 +671,13 @@ DevOps Research and Assessment
 - Periodic reviews of alert and thresholds
 
 ---
-
+<!-- _class: split -->
 ![bg left fit](assets/01_shiftleft.png)
-# Dev Experience
-> Happy devs ship better code 
-- DevContainers
-- Pre-commit Hooks for Lint, Code Quality, Security Scanning
-- Meta prompts (CLAUDE.md)
+# Deployments
+- Blue Green, Canary
+- Synthetic Monitoring
+- Feature Flags
+- Chaos Engineering
 
 ---
 ![bg left fit](assets/01_shiftleft.png)
