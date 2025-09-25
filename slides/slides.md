@@ -25,6 +25,13 @@ _This statement has been notarized by the Ministry of Totally Serious Bugs._
 
 ![bg left:60%](assets/01_office.png)
 
+# Ant Intelligence
+
+_Ant-ificial Intelligence 
+for Financial Markets_ 
+
+<span style="font-size: 14px;">Learn more at ai.ai</span>
+
 ---
 
 <style>
