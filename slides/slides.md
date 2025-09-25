@@ -698,16 +698,66 @@ DevOps Research and Assessment
 
 **WHO** does **WHAT** by **WHEN**
 
+---
+
+<div class="character-grid">
+  <div class="character-item">
+    <img src="assets/slim.png" alt="Slim">
+    <h3>Slim</h3>
+    <p>L1 Support</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/dot.png" alt="Dot">
+    <h3>Dot</h3>
+    <p>Incident Manager</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/atta.png" alt="Atta">
+    <h3>Atta</h3>
+    <p>Product Owner</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/rosie.png" alt="Rosie">
+    <h3>Rosie</h3>
+    <p>UI Team Lead</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/manny.png" alt="Manny">
+    <h3>Manny</h3>
+    <p>SRE Team</p>
+  </div>
+  <div class="character-item">
+    <img src="assets/heimlich.png" alt="Heimlich">
+    <h3>Heimlich</h3>
+    <p>Backend C++</p>
+  </div>
+    <div class="character-item">
+    <img src="assets/flik.png" alt="Flik">
+    <h3>Flik</h3>
+    <p>Data Team Lead</p>
+  </div>
+</div>
+
 
 ---
 # Short Term
 
-|**Team**| **What**                          |
-|----|-------------------------------------|
-|SRE | Alert on 85% of disk usage & Runbook update             | 
-|Data| Add tests and error handling, move purger job to Airflow  |
-|UI  | Improve Signal to Noise ratio, refactoring third party lib errors         |
-|C++ | Update Support rotation calendar, ensure secondary support person        |
+<style>
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #333;
+}
+</style>
+
+|**Team**| **What**                          | **Who** |
+|----|-------------------------------------|---------|
+|SRE | Alert on 85% of disk usage & Runbook update             | <img src="assets/manny.png" class="profile-img"> |
+|Data| Add tests and error handling, move purger job to Airflow  | <img src="assets/flik.png" class="profile-img"> |
+|UI  | Improve Signal to Noise ratio, refactoring third party lib errors         | <img src="assets/rosie.png" class="profile-img"> |
+|C++ | Update Support rotation calendar, ensure secondary support person        | <img src="assets/heimlich.png" class="profile-img"> |
 
 
 ---
@@ -721,6 +771,8 @@ DevOps Research and Assessment
 | UI       | Implement synthetic UI tests for post release validations                  | Time to Restore Service |
 
 ---
+
+# A Bug's Life
 
 A bug fix is rarely a quick code change.
 A bug's life is a lesson in software development.
