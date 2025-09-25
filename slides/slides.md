@@ -14,7 +14,7 @@ The following narrative is a work of pure fiction.
 
 Any similarities to actual people, places, or events are entirely coincidental and absolutely unrelated to the speaker's professional life.  
 
-Furthermore, the speaker categorically denies any emotional attachment to animated films featuring entrepreneurial insects.  
+Furthermore, the speaker denies borrowing the title from a popular animated film produced by a studio with powerful lawyers.
 
 _This statement has been notarized by the Ministry of Totally Serious Bugs._
 
