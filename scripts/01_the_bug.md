@@ -36,8 +36,9 @@ How many users impacted??
 Any screenshots??  
 Did you screenshare with the user??? *cc:@rosie,@atta*"  
 
-Dot has tagged the UI team lead, Rosie.  
-Atta, the product owner.  
+Atta, is the product owner.  
+And Rosie is the UI team lead.  
+
 Rosie responds with in minutes, with even more questions.  
 
 "Did you ask them to clear their browser cache?  
@@ -80,7 +81,7 @@ Rosie loses it. Her team will be blamed for this - but it must be the backend te
 
 "I'm sure the C++ team released over the weekend without telling us! *@Dot,@atta* Why is no one from C++ team here?",   
 
-Slim, incidentally knew the answer, as he had tried to reach out to them earlier.   
+Slim, incidentally knew the answer, as he had tried to reach out to Helimlich from the C++ team earlier.
 
 **SLIDE**  
 
@@ -90,8 +91,8 @@ Slim, incidentally knew the answer, as he had tried to reach out to them earlier
 A few mintues roll by, and Manny replies.  
 
 "There were no releases.  
-I just checked Argo.  
-But something interesting...  
+I just checked ArgoCD.  
+But something interesting as I was checking the pod logs ...  
 the processor pod logs have a json field - `rows_read: 0` on every msg!",  
 **SLIDE**  
 
@@ -103,6 +104,8 @@ Atta, now desperate, tags the data team lead, Flick.
 He is a real genius, and always trying to do something fancy ...  
 
 "*@all* This is all hands of deck. @Flik what's @manny saying? Can you check the onprem airflow cluster?",  
+
+**SLIDE** 
 
 Flick, is always plugged into slack, he types in checking ... but does not hit send.  
 Instead he checks his DataDog dashboards for the Airflow cluster.  
@@ -119,24 +122,24 @@ its stuck for 15 hours, generally gets done in 5 hours
  trying to find what's going on   
 
 Another 30 minutes crawl by.  
-Yes! he has done it again - found the bug that caused the outage!  
+Yes! Flick has done it again - found the bug that caused the outage!  
 He quickly replies  
 "I think I found the smoking gun!  
 The disk where the job is writing is full, so its crashing but it keeps failing silently and retrying ...",  
 
 Manny says  
 "We received no disk pressure alerts!"  
-Slim replies    
+To that, Flick replies  
 
 "This disk was kept clean by a cron job on the host itself  
 and there is no disk pressure alerts.  
-I've cleaned up manually and rerun with more workers,   
+I've cleaned up manually and rerun the job with more workers,   
 now it should be done within a couple of hours!"  
 
 I can explain during postmortem!    
 
 Later that day during the postmortem  
-Slim takes the lead and explains what he found    
+Flick takes the lead and explains what he found    
 
 I think I found the smoking gun ...    
 
@@ -150,15 +153,15 @@ I just vibe coded the patch and pushed it to prod
 so we can call this a day       
 
 
-Manny, looks at Slim and asks    
+Manny, looks at Flick and asks    
 
 Your patch has fixed the bug. But what else needs a patch?    
 
 
-Slim pauses, and thinks for a moment and asks    
+Flick looks surprised at the question and asks 
 What do you mean?    
 I've deployed the fix    
-the dashboards are back up    
+the dashboards are back up      
 What else could need a patch?    
 
 
