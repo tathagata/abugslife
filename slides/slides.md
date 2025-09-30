@@ -520,8 +520,10 @@ _hasn't this always been like that?_
 ![bg left fit](assets/01_pr.png)
 # <span style="color:red;">Mo code, mo bugs</span>
 ➡️ blame the author
-➡️ blame the ~~author~~ reviewer
-➡️ blame the ~~author~~ ~~reviewer~~ agent?
+➡️ blame the ~~author~~ quality of model?
+➡️ blame the ~~author~~ quality of prompt?
+➡️ blame the ~~author~~ quality of review?
+➡️ blame the ~~author~~ quality of evals?
 
 ---
 
