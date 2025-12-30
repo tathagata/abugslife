@@ -92,7 +92,7 @@ Slim, incidentally knew the answer, as he had tried to reach out to Helimlich fr
 "Everyone is at CPPCon this week!",  
 
 **SLIDE**  
-A few mintues roll by, and Manny replies.  
+A few minutes roll by, and Manny replies.  
 
 "There were no releases.  
 I just checked ArgoCD.  
@@ -116,7 +116,7 @@ Instead he checks his DataDog dashboards for the Airflow cluster.
 
 **SLIDE**  
 
-Just as he suspected, the nightly ticker load batch has not completed yet.  
+Just as Flick suspected, the nightly ticker load batch has not completed yet.  
 It should have completed before markets opened.    
 
 **SLIDE**  
@@ -125,9 +125,8 @@ It should have completed before markets opened.
 its stuck for 15 hours, generally gets done in 5 hours  
  trying to find what's going on   
 
-Another 30 minutes crawl by.  
-Yes! Flick has done it again - found the bug that caused the outage!  
-He quickly replies  
+Another 30 minutes crawl by.   
+Flick replies finally with some good news. 
 "I think I found the smoking gun!  
 The disk where the job is writing is full, so its crashing but it keeps failing silently and retrying ...",  
 
