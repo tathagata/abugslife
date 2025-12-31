@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  slides:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./slides:/app/slides
+      - ./scripts:/app/scripts
+    stdin_open: true
+    tty: true
+    command: ./scripts/serve-slides.sh

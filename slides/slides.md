@@ -20,8 +20,39 @@ _This statement has been notarized by the Ministry of Totally Serious Bugs._
 
 ---
 
+<style>
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.dramatic-title {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 3em;
+  overflow: hidden;
+  border-right: 3px solid;
+  white-space: nowrap;
+  margin: 0 auto;
+  display: inline-block;
+  animation: 
+    typewriter 3s steps(20) 1s forwards,
+    blink 0.75s step-end infinite;
+}
+</style>
+
+<div class="dramatic-title">
+ACT I: The Alert
+</div>
+
+---
 
 <!-- _class: split -->
+
 
 ![bg left:60%](assets/01_office.png)
 
@@ -168,7 +199,41 @@ for Financial Markets_
 ---
 ![bg fit](assets/01_slack_05.png)
 
+
 ---
+
+<style>
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.dramatic-title {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 3em;
+  overflow: hidden;
+  border-right: 3px solid;
+  white-space: nowrap;
+  margin: 0 auto;
+  display: inline-block;
+  animation: 
+    typewriter 3s steps(20) 1s forwards,
+    blink 0.75s step-end infinite;
+}
+</style>
+
+<div class="dramatic-title">
+ACT II: The Hunt
+</div>
+
+
+---
+
 
 ![bg fit](assets/01_slack_07.png)
 
@@ -254,6 +319,7 @@ for Financial Markets_
   </div>
 </div>
 
+
 ---
 
 ![bg fit](assets/01_slack_10.png)
@@ -265,6 +331,37 @@ for Financial Markets_
 ---
 
 ![bg fit](assets/01_slack_12.png)
+
+---
+<style>
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.dramatic-title {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 3em;
+  overflow: hidden;
+  border-right: 3px solid;
+  white-space: nowrap;
+  margin: 0 auto;
+  display: inline-block;
+  animation: 
+    typewriter 3s steps(20) 1s forwards,
+    blink 0.75s step-end infinite;
+}
+</style>
+
+<div class="dramatic-title">
+ACT III: The Fix
+</div>
+
 
 ---
 
@@ -318,6 +415,13 @@ for Financial Markets_
 ---
 
 ![bg fit](assets/01_slack_15.png)
+
+
+---
+
+<div class="dramatic-title">
+ACT III: Postmortem
+</div>
 
 
 ---
@@ -379,7 +483,9 @@ for entry in os.listdir(BASE_DIR):
 
 ```
 ---
-# <!--fit--> To Be Continued ...
+<div class="dramatic-title">
+To Be Continued ...
+</div>
 
 ---
 
@@ -563,12 +669,72 @@ DevOps Research and Assessment
 ---
 ## DORA Metrics: What to Ask
 
-| **Metric**                 | **Key Question**                  |
-|----------------------------|-----------------------------------|
-| **Deployment Frequency**   | How often do we deploy to prod?   |
-| **Lead Time for Changes**  | What slows down our releases?     |
-| **Change Failure Rate**    | Why do our changes break things?  |
-| **Time to Restore Service**| How quickly do we recover?        |
+<style>
+.dora-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dora-table th,
+.dora-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 2px #333;
+}
+
+.dora-row {
+  opacity: 0;
+  animation: fadeInRow 0.5s ease-in forwards;
+}
+
+.dora-row:nth-child(1) { animation-delay: 0.5s; }
+.dora-row:nth-child(2) { animation-delay: 1.5s; }
+.dora-row:nth-child(3) { animation-delay: 2.5s; }
+.dora-row:nth-child(4) { animation-delay: 3.5s; }
+.dora-row:nth-child(5) { animation-delay: 4.5s; }
+
+@keyframes fadeInRow {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+</style>
+
+<table class="dora-table">
+  <thead>
+    <tr>
+      <th><strong>Metric</strong></th>
+      <th><strong>Key Question</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="dora-row">
+      <td><strong>Deployment Frequency</strong></td>
+      <td>🚀</td>
+    </tr>
+    <tr class="dora-row">
+      <td><strong>Lead Time for Changes</strong></td>
+      <td>🐌</td>
+    </tr>
+    <tr class="dora-row">
+      <td><strong>Change Failure Rate</strong></td>
+      <td>💥</td>
+    </tr>
+    <tr class="dora-row">
+      <td><strong>Time to Restore Service</strong></td>
+      <td>⚡</td>
+    </tr>
+    <tr class="dora-row">
+      <td><strong>Reliability</strong></td>
+      <td>🛡️</td>
+    </tr>
+  </tbody>
+</table>
 
 
 
@@ -634,6 +800,17 @@ DevOps Research and Assessment
 | **Time to Restore Service** | <1 hour                 | <1 day                     | >1 day                     |
 
 ---
+## DORA Metrics: What to Ask
+
+| **Metric**                 | **Key Question**                  |
+|----------------------------|-----------------------------------|
+| **Deployment Frequency**   | How often do we deploy to prod?   |
+| **Lead Time for Changes**  | What slows down our releases?     |
+| **Change Failure Rate**    | Why do our changes break things?  |
+| **Time to Restore Service**| How quickly do we recover?        |
+
+
+---
 
 🔄 Change Workflows  &nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_What_</span> needs to change? 
 
@@ -658,6 +835,7 @@ DevOps Research and Assessment
 - **Test Driven Development**
 - **Pair Programming**
 
+---
 
 ---
 
