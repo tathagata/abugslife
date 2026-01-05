@@ -1,6 +1,8 @@
 # What Needs to Change Other Than Code
 When you have collected some data about where you team stands, it is time to answer the mention question -  about what needs to change
 
+
+
 For the last question, I leaned in on the DORA metrics for finding where we are today.
 However for the What part, it is really difficult to give a one size fits all answer.
 It really depends on your team, your organization, your culture, your product.
