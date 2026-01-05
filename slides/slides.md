@@ -809,16 +809,43 @@ DevOps Research and Assessment
 | **Change Failure Rate**    | Why do our changes break things?  |
 | **Time to Restore Service**| How quickly do we recover?        |
 
+---
+<!-- _class: split -->
+![bg left fit](assets/goodhart.png)
+# Goodhart's Law
+> When a measure becomes a target, it ceases to be a good measure.
+
+* Don't game the metrics
+* Focus on outcomes, not outputs
+* Metrics guide improvement, they don't define success
 
 ---
 
 🔄 Change Workflows  &nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_What_</span> needs to change? 
 
 ---
+<!-- _class: split -->
+![bg left fit](assets/karpathy.png)
+> never felt this much behind
 
+> agents, subagents
+prompts, contexts, memory
+modes, tools, permissions
+plugins, skills, hooks
+
+> MCP, LSP, slash commands
+workflows, ide integration
+
+>fundamentally stochastic
+unintelligible, changing entities
+
+> roll up your sleeves to not fall behind
+
+
+
+---
 <!-- _class: split -->
 ![bg fit](assets/01_shift_left.png)
-
 
 ---
 
