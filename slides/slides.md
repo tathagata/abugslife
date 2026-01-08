@@ -5,8 +5,12 @@ theme: default
 html: true
 paginate: true
 ---
+
+![bg](assets/title_slide.png)
+
+---
+
 <!-- header: 'A Bug's Life by Tathagata Dasgupta' -->
-# <!--fit--> <span style="color:red;">Disclaimer</span>
 
 --- 
 # <span style="color:red;">Disclaimer</span>
@@ -625,19 +629,17 @@ _hasn't this always been like that?_
 <!-- _class: split -->
 ![bg left fit](assets/01_pr.png)
 # <span style="color:red;">Mo code, mo bugs</span>
-➡️ blame the author
-➡️ blame the ~~author~~ quality of model?
-➡️ blame the ~~author~~ quality of prompt?
-➡️ blame the ~~author~~ quality of review?
-➡️ blame the ~~author~~ quality of evals?
+➡️  the author
+➡️  the ~~author~~ quality of model?
+➡️  the ~~author~~ quality of prompt?
+➡️  the ~~author~~ quality of review?
+➡️  the ~~author~~ quality of evals?
 
 ---
 
-![bg left fit](assets/01_agent_gone_wild.png)
 
----
-
-![bg fit](assets/01_replit.png)
+![bg left:20% fit](assets/01_agent_gone_wild.png)
+![bg right:80% fit](assets/01_replit.png)
 
 ---
 # 🐞 Right Mindset
@@ -645,6 +647,99 @@ _hasn't this always been like that?_
 * opportunity to plug the gaps, not a blame game
 * learning checkpoints, not personal failures
 * debugging as a discipline, not just occasional damage control
+
+
+---
+
+🔄 Change Workflows  &nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_What_</span> needs to change? 
+
+---
+<!-- _class: split -->
+![bg left fit](assets/karpathy.png)
+
+> agents, subagents
+prompts, contexts, memory
+modes, tools, permissions
+plugins, skills, hooks
+MCP, LSP, slash commands
+workflows, ide integration
+
+---
+<!-- _class: split -->
+![bg left fit](assets/karpathy.png)
+
+>fundamentally stochastic
+unintelligible, changing entities
+
+> intermingled with what used 
+to be good old fashioned engineering
+
+---
+
+<!-- _header: 'Old fashioned engineering' -->
+
+![bg fit](assets/01_workflow_without_bugs.png)
+
+---
+
+# Bugs crawls out after deployment
+![bg fit](assets/01_workflow_with_bugs.png)
+
+---
+<!-- _header: fundamentally stochastic, unintelligible, changing entities -->
+![bg fit](assets/01_workflow_with_ai_without_bugs.png)
+
+---
+<!-- _class: split -->
+![bg fit](assets/01_shift_left.png)
+
+---
+
+![traditional](assets/01_traditional.png)
+
+---
+
+![shiftleft](assets/01_shiftleft.png)
+
+---
+<!-- _class: split -->
+![bg left fit](assets/01_shiftleft.png)
+# Sounds familiar?
+- **Test Driven Development**
+- **Pair Programming**
+
+---
+
+---
+
+![bg left fit](assets/01_shiftleft.png)
+# Dev Experience
+> Happy devs ship better code 
+- DevContainers
+- Pre-commit Hooks for Lint, Code Quality, Security Scanning
+- Meta prompts (CLAUDE.md)
+
+---
+
+<!-- _class: split -->
+![bg left fit](assets/01_shiftleft.png)
+# Observability
+> Customer should not be part of your monitoring stack!
+- Actionable alerts, not noise
+- Dashboards for debugging, alerts for action
+- Logs, Metrics, Traces are the besties you need
+- Periodic reviews of alert and thresholds
+
+---
+<!-- _class: split -->
+![bg left fit](assets/01_shiftleft.png)
+# Deployments
+- Blue Green, Canary
+- Synthetic Monitoring
+- Feature Flags
+- Chaos Engineering
+
+
 ---
 
 # 📊 Measure Baselines  
@@ -820,78 +915,6 @@ DevOps Research and Assessment
 * Metrics guide improvement, they don't define success
 
 ---
-
-🔄 Change Workflows  &nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_What_</span> needs to change? 
-
----
-<!-- _class: split -->
-![bg left fit](assets/karpathy.png)
-> never felt this much behind
-
-> agents, subagents
-prompts, contexts, memory
-modes, tools, permissions
-plugins, skills, hooks
-
-> MCP, LSP, slash commands
-workflows, ide integration
-
->fundamentally stochastic
-unintelligible, changing entities
-
-> roll up your sleeves to not fall behind
-
-
-
----
-<!-- _class: split -->
-![bg fit](assets/01_shift_left.png)
-
----
-
-![traditional](assets/01_traditional.png)
-
----
-
-![shiftleft](assets/01_shiftleft.png)
-
----
-<!-- _class: split -->
-![bg left fit](assets/01_shiftleft.png)
-# Sounds familiar?
-- **Test Driven Development**
-- **Pair Programming**
-
----
-
----
-
-![bg left fit](assets/01_shiftleft.png)
-# Dev Experience
-> Happy devs ship better code 
-- DevContainers
-- Pre-commit Hooks for Lint, Code Quality, Security Scanning
-- Meta prompts (CLAUDE.md)
-
----
-
-<!-- _class: split -->
-![bg left fit](assets/01_shiftleft.png)
-# Observability
-> Customer should not be part of your monitoring stack!
-- Actionable alerts, not noise
-- Dashboards for debugging, alerts for action
-- Logs, Metrics, Traces are the besties you need
-- Periodic reviews of alert and thresholds
-
----
-<!-- _class: split -->
-![bg left fit](assets/01_shiftleft.png)
-# Deployments
-- Blue Green, Canary
-- Synthetic Monitoring
-- Feature Flags
-- Chaos Engineering
 
 ---
 ![bg left fit](assets/01_shiftleft.png)

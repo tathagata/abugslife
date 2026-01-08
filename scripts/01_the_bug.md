@@ -7,20 +7,20 @@ Petabytes of data flow through their systems every day, powering trading decisio
 The Real-Time business is one of the most profitable units of Ant Intelligence.
 Stakes are always high.
 
+**SLIDE 5**
+
 Slim works for L1 support at An Intelligence. He was just about get the first coffee for the day as his phone buzzed.
 He never got that first sip.  
 
-**SLIDE**
-
 An alert flashes on the support channel.  
 
-**SLIDE**  
+**SLIDE 6**  
 
 > OpsGenie: "P1: Goldkern Husks: Dashboards not loading!!!"
 
 Three exclamation marks. Never a good sign.
 
-**SLIDE**
+**SLIDE 7**
 
 Goldkern Husks—the biggest commodities trader on the street.
 Hopper, their head of trading, is a legend in the industry.
@@ -31,7 +31,7 @@ Ten frantic minutes pass by as he searches for "dashboard outage," "empty dashbo
 He has Nothing concrete.
 Desperate - he tags the ui team lead, Rosie. 
 
-**SLIDE**  
+**SLIDE 8**  
 
 All GH dashboards are down.  
 Searched Confluence, StackExchange, ServiceNow, Runbooks!  
@@ -39,12 +39,12 @@ Need someone from the UI team to take a look!
 
 Dot, the incident manager, fires off questions like a prosecutor.  
 
-**SLIDE**  
+**SLIDE 10**  
 
 Is it just one client?  
 How many users impacted??  
 Any screenshots??  
-Did you screenshare with the user??? *cc:@rosie,@atta*"  
+Did you screen share with the user??? *cc:@rosie,@atta*"  
 
 Atta is the product manager.
 Rosie is the UI team lead.
@@ -67,7 +67,7 @@ Ok - checked with the client.
 All good on their end!
 Hopper is escalating this, as 15 mins SLA was breached!"
 
-Rosie's blood pressure spikes. She digs through the screenshots and logs Slim shared.  
+Rosie's blood pressure spikes.  
 
 **SLIDE**  
 
@@ -89,7 +89,7 @@ Manny, the SRE on support, has been secretly lurking on the chat and jumps in.
 
 Rosie feels anything but calm at this point.
 This is the second big outage this month.
-UI team is already behind schedule for their releases.
+Her UI team is already behind schedule for their releases.
 Yet another bug fix is the last thing they need.
 
 OR is it the backend team breaking things again like last time?
@@ -99,7 +99,7 @@ OR is it the backend team breaking things again like last time?
 "I'm sure the C++ team released over the weekend without telling us! *@Dot,@atta* Why is no one from C++ team here?",
 
 Incidentally, Slim, from his years of experince doing L1 support, had proactively reached out to the C++ team lead, Helimlich. 
-He knows the answer
+He knews the answer
 
 **SLIDE**  
 
@@ -132,7 +132,7 @@ Instead, he checks his DataDog dashboards for the Airflow cluster.
 
 **SLIDE**  
 
-Just as Flick suspected, the nightly ticker load batch has not completed yet.
+Ooops! the nightly ticker load batch job is still running.
 It should have completed before markets opened.
 
 **SLIDE**
@@ -141,13 +141,14 @@ It should have completed before markets opened.
 it's stuck for 15 hours, generally gets done in 5 hours
 trying to find what's going on
 
-Thirty minutes tick by—each one an eternity.
+Thirty minutes tick by
+each minute feels like one an eternity.
 Then Flick's message drops.
 
 "I think I found the smoking gun!
 The disk where the job is writing is full, so it's crashing but it keeps failing silently and retrying ...",  
 
-Manny says
+This triggers the SRE Manny
 "We received no disk pressure alerts!"
 To that, Flick replies
 
@@ -160,7 +161,7 @@ I can explain during postmortem!
 
 Later that day, the postmortem room is packed.
 
-Flick takes the lead.
+Flick takes the lead and goes straight to the whiteboard.
 
 "Found the smoking gun. Remember that performance optimization I pushed last month?
 Sharding the ticker file—split one massive file into smaller chunks by date and exchange.
