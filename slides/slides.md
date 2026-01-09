@@ -709,24 +709,14 @@ to be good old fashioned engineering
 
 ---
 
----
-
-![bg left fit](assets/01_shiftleft.png)
-# Dev Experience
-> Happy devs ship better code 
-- DevContainers
-- Pre-commit Hooks for Lint, Code Quality, Security Scanning
-- Meta prompts (CLAUDE.md)
-
----
-
 <!-- _class: split -->
 ![bg left fit](assets/01_shiftleft.png)
 # Observability
 > Customer should not be part of your monitoring stack!
-- Actionable alerts, not noise
-- Dashboards for debugging, alerts for action
-- Logs, Metrics, Traces are the besties you need
+- Logs, Metrics, Traces
+- Dashboards for debugging
+- Alerts for action
+- Signals, not noise
 - Periodic reviews of alert and thresholds
 
 ---
@@ -737,6 +727,16 @@ to be good old fashioned engineering
 - Synthetic Monitoring
 - Feature Flags
 - Chaos Engineering
+
+---
+
+![bg left fit](assets/01_shiftleft.png)
+# Dev Experience
+> Happy devs ship better code 
+- DevContainers
+- Pre-commit Hooks for Lint, Code Quality, Security Scanning
+- Meta prompts (CLAUDE.md)
+
 
 
 ---
@@ -833,15 +833,6 @@ DevOps Research and Assessment
 
 
 ---
-## How often do you deploy to prod?
-
-| **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
-|---------------------------|---------------------------|----------------------------|----------------------------|
-| **Deployment Frequency**  | **Multiple times/day**    | Weekly to monthly          | Less than monthly          |
-
-* one metric to rule them all 💕
-
----
 
 ## Why can't you deploy more often?
 <!-- _class: split -->
@@ -849,12 +840,13 @@ DevOps Research and Assessment
 |---------------------------|---------------------------|----------------------------|----------------------------|
 | **Lead Time for Changes** | **Hours**                | Days                       | Weeks to months            |
 
-> Too many manual steps?
+> Too many code reviews?
 > Slow build times?
 > Slow test execution?
+> Too many manual steps?
 > Too many approvals?
-> Architectural limitations to achieve zero downtime deployments?
-> Upstream dependencies and Downstream impact?
+> Limitations to zero downtime deployments?
+> Upstream dependencies and downstream impact?
 
 ---
 
@@ -907,9 +899,6 @@ DevOps Research and Assessment
 <!-- _class: split -->
 ![bg left fit](assets/goodhart.png)
 # Goodhart's Law
-> When a measure becomes a target, it ceases to be a good measure.
-
-* Don't game the metrics
 * Focus on outcomes, not outputs
 * Metrics guide improvement, they don't define success
 
@@ -920,8 +909,8 @@ DevOps Research and Assessment
 # Partnership 
 > bugs that happen before the code
 - Empathy
-- Trust
 - Honest Communication
+- Trust
 
 ---
 <!-- _class: split -->
