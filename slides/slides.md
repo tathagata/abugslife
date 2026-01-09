@@ -676,22 +676,21 @@ to be good old fashioned engineering
 
 ---
 
-<!-- _header: 'Old fashioned engineering' -->
-
 ![bg fit](assets/01_workflow_without_bugs.png)
 
 ---
 
-# Bugs crawls out after deployment
-![bg fit](assets/01_workflow_with_bugs.png)
-
----
-<!-- _header: fundamentally stochastic, unintelligible, changing entities -->
 ![bg fit](assets/01_workflow_with_ai_without_bugs.png)
 
 ---
+
+![bg fit](assets/01_workflow_with_bugs.png)
+
+---
+
 <!-- _class: split -->
 ![bg fit](assets/01_shift_left.png)
+
 
 ---
 
