@@ -5,14 +5,18 @@ theme: default
 html: true
 paginate: true
 ---
-<!-- header: 'A Bug's Life by Tathagata Dasgupta' -->
-# <!--fit--> <span style="color:red;">Disclaimer</span>
+
+![bg](assets/title_slide.png)
 
 --- 
 # <span style="color:red;">Disclaimer</span>
 The following narrative is a work of pure fiction.  
 
-Any similarities to actual people, places, or events are entirely coincidental and absolutely unrelated to the speaker's professional life.  
+Any similarities to actual people, places, or events are entirely coincidental and absolutely unrelated to the systems the speaker is responsible for.
+
+
+No bugs there. Trust him.
+
 
 Furthermore, the speaker denies borrowing the title from a popular animated film produced by a studio with powerful lawyers.
 
@@ -423,8 +427,13 @@ ACT III: The Fix
 ACT III: Postmortem
 </div>
 
+---
+
+![bg fit](assets/01_post_mortem.png)
 
 ---
+
+# old directory structure
 
 ```bash
 /data/nyse.ticker
@@ -432,6 +441,8 @@ ACT III: Postmortem
 /data/nasdaq.ticker
 ```
 ---
+
+# new sharded directory structure
 
 ```
 .
@@ -452,6 +463,7 @@ ACT III: Postmortem
 ```
 
 ---
+# old cron 
 
 ```python
 EXCHANGES = ["nyse", "nasdaq", "amex", "kraken"]
@@ -462,9 +474,11 @@ for ex in EXCHANGES:
     if os.path.exists(file_path):
         os.remove(file_path)
 ```
-
+> different code repo, claude code missed it
+> `os.remove` silently fails if file is not there
 
 ---
+# new cron
 
 ```python
 import os
@@ -482,6 +496,12 @@ for entry in os.listdir(BASE_DIR):
                 print(f"Deleted: {file_path}")
 
 ```
+> quick fix, matches new directory structure
+---
+
+![bg fit](assets/01_what_else_needs_patch.png)
+
+
 ---
 <div class="dramatic-title">
 To Be Continued ...
@@ -513,55 +533,16 @@ Low Latency Engineering
 
 ---
 
-🐞 The New Normal
+* 🌍 Change in Landscape  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_What_</span> is changing?  
+* 🐞 Change in Attitude   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_Why_</span> change our attitude toward bugs?  
+* 🔄 Change in Workflow  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red;">_How_</span> do we act on that change?
 
-📊 Measure Baselines 
 
-🔄 Change Workflows 
-
-🤝 Build Partnerships
-
----
-🐞 The New Normal  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_Why_</span> change our attitude toward bugs?  
-
-📊 Measure Baselines 
-
-🔄 Change Workflows   
-
-🤝 Build Partnerships
-
----
-🐞 The New Normal  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_Why_</span> change our attitude toward bugs?  
-
-📊 Measure Baselines  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red;">_Where_</span> are we today?  
-
-🔄 Change Workflows   
-
-🤝 Build Partnerships  
-
----
-🐞 The New Normal  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_Why_</span> change our attitude toward bugs?  
-
-📊 Measure Baselines  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red;">_Where_</span> are we today?  
-
-🔄 Change Workflows  &nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_What_</span> needs to change?  
-
-🤝 Build Partnerships
 
 ---
 
-🐞 The New Normal  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_Why_</span> change our attitude toward bugs?  
-
-📊 Measure Baselines  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red;">_Where_</span> are we today?  
-
-🔄 Change Workflows  &nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_What_</span> needs to change?  
-
-🤝 Build Partnerships  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_How_</span> do we make it happen?  
-
----
-
-# 🐞 The New Normal  
-<span style="color:red;">_Why_</span> change our attitude toward bugs?
+# 🐞 Change in Landscape
+<span style="color:red;">_What_</span> is changing?
 
 
 ---
@@ -621,34 +602,126 @@ _hasn't this always been like that?_
 ⚡ Coding at the speed of thought
 🦥 Debugging at the speed of sloth 
 
+
 ---
 <!-- _class: split -->
+![bg left fit](assets/karpathy.png)
+
+> agents, subagents
+prompts, contexts, memory
+modes, tools, permissions
+plugins, skills, hooks
+MCP, LSP, slash commands
+workflows, ide integration
+
+---
+<!-- _class: split -->
+![bg left fit](assets/karpathy.png)
+
+>fundamentally stochastic
+unintelligible, changing entities
+
+> intermingled with what used 
+to be good old fashioned engineering
+
+---
+
+![bg fit](assets/01_workflow_without_bugs.png)
+
+---
+
+![bg fit](assets/01_workflow_with_bugs.png)
+
+---
+
+![bg fit](assets/01_workflow_with_ai_without_bugs.png)
+
+---
+
+![bg left:20% fit](assets/01_agent_gone_wild.png)
+![bg right:80% fit](assets/01_replit.png)
+
+
+---
+
+🌍 Change in Landscape
+🐞 Change in Attitude
+
+---
+
+<!-- _class: split -->
 ![bg left fit](assets/01_pr.png)
-# <span style="color:red;">Mo code, mo bugs</span>
-➡️ blame the author
-➡️ blame the ~~author~~ quality of model?
-➡️ blame the ~~author~~ quality of prompt?
-➡️ blame the ~~author~~ quality of review?
-➡️ blame the ~~author~~ quality of evals?
+# <span style="color:red;">BUGS == BLAME</span>
+* 👤 the author?
+* 🔍 the reviewer?
+* 💬 the prompt?
+* 🤖 the model?
+* 📊 the evals?
+* 🧩 third party ai dependencies?
 
 ---
 
-![bg left fit](assets/01_agent_gone_wild.png)
+<!-- _class: split -->
+<!-- ![bg left:40% fit](assets/01_pipe_fail.gif) -->
+
+# <span style="color:red;">BUGS == OPPORTUNITIES</span>
+- 📚 Learning checkpoints, not personal failures
+- 🏗️ Opportunity to plug the gaps, stronger foundations
+- 🔧 Debugging as a discipline, not occasional damage control
+- 🛡 Guardrails first
 
 ---
 
-![bg fit](assets/01_replit.png)
+<!-- _class: split -->
+![bg fit](assets/01_shift_left.png)
 
 ---
-# 🐞 Right Mindset
 
-* opportunity to plug the gaps, not a blame game
-* learning checkpoints, not personal failures
-* debugging as a discipline, not just occasional damage control
+![traditional](assets/01_traditional.png)
+
 ---
 
-# 📊 Measure Baselines  
-<span style="color:red;">_Where_</span> are we today? 
+![shiftleft](assets/01_shiftleft.png)
+
+---
+<!-- _class: split -->
+![bg left fit](assets/01_shiftleft.png)
+# Sounds familiar?
+- **Test Driven Development**
+- **Pair Programming**
+
+---
+<!-- _class: split -->
+![bg left fit](assets/01_shiftleft.png)
+# Deployments
+- Blue Green, Canary
+- Synthetic Monitoring
+- Feature Flags
+- Chaos Engineering
+---
+<!-- _class: split -->
+![bg left fit](assets/01_shiftleft.png)
+# Observability
+> Customer should not be part of your monitoring stack!
+- Logs, Metrics, Traces
+- Dashboards for debugging
+- Alerts for action
+- Signals, not noise
+- Periodic reviews of evals, alerts, thresholds
+
+---
+
+![bg left fit](assets/01_shiftleft.png)
+# Dev Experience
+> Happy devs ship better code 
+- DevContainers for replicable environments
+- Pre-commit/push hooks for Lint, Test, Code Quality, Security Scanning
+- Versioning everything - code, infra, data, models, prompts 
+- Standardized patterns and polices through internal developer platform 
+
+---
+
+🔄 Change Workflows  &nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_What_</span> needs to change? 
 
 ---
 <!-- _class: split -->
@@ -739,15 +812,6 @@ DevOps Research and Assessment
 
 
 ---
-## How often do you deploy to prod?
-
-| **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
-|---------------------------|---------------------------|----------------------------|----------------------------|
-| **Deployment Frequency**  | **Multiple times/day**    | Weekly to monthly          | Less than monthly          |
-
-* one metric to rule them all 💕
-
----
 
 ## Why can't you deploy more often?
 <!-- _class: split -->
@@ -755,12 +819,13 @@ DevOps Research and Assessment
 |---------------------------|---------------------------|----------------------------|----------------------------|
 | **Lead Time for Changes** | **Hours**                | Days                       | Weeks to months            |
 
-> Too many manual steps?
+> Too many code reviews?
 > Slow build times?
 > Slow test execution?
+> Too many manual steps?
 > Too many approvals?
-> Architectural limitations to achieve zero downtime deployments?
-> Upstream dependencies and Downstream impact?
+> Limitations to zero downtime deployments?
+> Upstream dependencies and downstream impact?
 
 ---
 
@@ -813,93 +878,18 @@ DevOps Research and Assessment
 <!-- _class: split -->
 ![bg left fit](assets/goodhart.png)
 # Goodhart's Law
-> When a measure becomes a target, it ceases to be a good measure.
-
-* Don't game the metrics
 * Focus on outcomes, not outputs
 * Metrics guide improvement, they don't define success
 
 ---
-
-🔄 Change Workflows  &nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_What_</span> needs to change? 
-
----
-<!-- _class: split -->
-![bg left fit](assets/karpathy.png)
-> never felt this much behind
-
-> agents, subagents
-prompts, contexts, memory
-modes, tools, permissions
-plugins, skills, hooks
-
-> MCP, LSP, slash commands
-workflows, ide integration
-
->fundamentally stochastic
-unintelligible, changing entities
-
-> roll up your sleeves to not fall behind
-
-
-
----
-<!-- _class: split -->
-![bg fit](assets/01_shift_left.png)
-
----
-
-![traditional](assets/01_traditional.png)
-
----
-
-![shiftleft](assets/01_shiftleft.png)
-
----
-<!-- _class: split -->
-![bg left fit](assets/01_shiftleft.png)
-# Sounds familiar?
-- **Test Driven Development**
-- **Pair Programming**
-
----
-
----
-
-![bg left fit](assets/01_shiftleft.png)
-# Dev Experience
-> Happy devs ship better code 
-- DevContainers
-- Pre-commit Hooks for Lint, Code Quality, Security Scanning
-- Meta prompts (CLAUDE.md)
-
----
-
-<!-- _class: split -->
-![bg left fit](assets/01_shiftleft.png)
-# Observability
-> Customer should not be part of your monitoring stack!
-- Actionable alerts, not noise
-- Dashboards for debugging, alerts for action
-- Logs, Metrics, Traces are the besties you need
-- Periodic reviews of alert and thresholds
-
----
-<!-- _class: split -->
-![bg left fit](assets/01_shiftleft.png)
-# Deployments
-- Blue Green, Canary
-- Synthetic Monitoring
-- Feature Flags
-- Chaos Engineering
 
 ---
 ![bg left fit](assets/01_shiftleft.png)
 # Partnership 
 > bugs that happen before the code
 - Empathy
-- Trust
 - Honest Communication
+- Trust
 
 ---
 <!-- _class: split -->
@@ -997,9 +987,6 @@ Is it our architecture? Our processes? Or is it us?
 Technology will keep moving faster than we can keep up with.
 Crisis will always be a part of software development.
 
-How we respond to change and crisis, will define us and our products.
+How we respond to change, will define us and our products.
 So lets be little kind to each other, and also to ourselves.
 
----
-
-![bg fit](assets/01_speakers_lounge.png)
