@@ -1,7 +1,12 @@
 ---
 agent: agent
+tools:
+  - run_in_terminal
+applyTo: none
 ---
-Sync local changes to remote repository by amending the last commit (if not the first commit on branch).
+Sync local changes to remote repository. Always keep a single commit on the branch by amending.
+
+**Execute all steps without asking for confirmation.**
 
 ## Steps
 
@@ -11,21 +16,15 @@ Sync local changes to remote repository by amending the last commit (if not the 
 
 3. **Stage all changes**: Run `git add -A`
 
-4. **Amend or create commit**:
-   - Check if branch has commits: `git log origin/<branch>..HEAD --oneline`
-   - If commits exist ahead of remote: `git commit --amend -m "<message>"`
-   - If first commit on branch: `git commit -m "<message>"`
-   - Commit message format: One-line summary, blank line, then bullet points of key changes
+4. **Commit (always amend if possible)**:
+   - Check branch status: `git log origin/<branch>..HEAD --oneline`
+   - If ANY local commits exist (even already pushed): `git commit --amend --no-edit`
+   - Only if first ever commit on branch: `git commit -m "<message>"`
+   - Goal: Keep exactly ONE commit on the feature branch
 
 5. **Push to remote**: `git push origin <branch> --force-with-lease`
 
 ## Notes
-- Use `--force-with-lease` for safety when amending (prevents overwriting others' work)
-- Keep commit messages concise but descriptive
-- Group related changes in bullet points
-
-Add all changed files to staging.
-Check if the current branch has any commits on the remote repository.
-If there are commits on the remote repository, amend the last commit to include the staged changes without changing the commit message.
-Push the changes to the remote repository.
-Force push to
+- Always amend to maintain a single clean commit per branch
+- Use `--force-with-lease` for safety (prevents overwriting others' work)
+- Run commands directly without waiting for user approval

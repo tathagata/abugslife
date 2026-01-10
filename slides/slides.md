@@ -665,10 +665,15 @@ to be good old fashioned engineering
 <!-- ![bg left:40% fit](assets/01_pipe_fail.gif) -->
 
 # <span style="color:red;">BUGS == OPPORTUNITIES</span>
-- 📚 Learning checkpoints, not personal failures
-- 🏗️ Opportunity to plug the gaps, stronger foundations
-- 🔧 Debugging as a discipline, not occasional damage control
-- 🛡 Guardrails first
+* 📚 Learning checkpoints, not personal failures
+* 🏗️ Opportunity to plug the gaps, stronger foundations
+* 🔧 Debugging as a discipline, not occasional damage control
+* 🛡 Guardrails first
+
+---
+🌍 Change in Landscape
+🐞 Change in Attitude
+🔄 Change in Workflow  
 
 ---
 
@@ -690,38 +695,6 @@ to be good old fashioned engineering
 - **Test Driven Development**
 - **Pair Programming**
 
----
-<!-- _class: split -->
-![bg left fit](assets/01_shiftleft.png)
-# Deployments
-- Blue Green, Canary
-- Synthetic Monitoring
-- Feature Flags
-- Chaos Engineering
----
-<!-- _class: split -->
-![bg left fit](assets/01_shiftleft.png)
-# Observability
-> Customer should not be part of your monitoring stack!
-- Logs, Metrics, Traces
-- Dashboards for debugging
-- Alerts for action
-- Signals, not noise
-- Periodic reviews of evals, alerts, thresholds
-
----
-
-![bg left fit](assets/01_shiftleft.png)
-# Dev Experience
-> Happy devs ship better code 
-- DevContainers for replicable environments
-- Pre-commit/push hooks for Lint, Test, Code Quality, Security Scanning
-- Versioning everything - code, infra, data, models, prompts 
-- Standardized patterns and polices through internal developer platform 
-
----
-
-🔄 Change Workflows  &nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_What_</span> needs to change? 
 
 ---
 <!-- _class: split -->
@@ -788,44 +761,49 @@ DevOps Research and Assessment
   <tbody>
     <tr class="dora-row">
       <td><strong>Deployment Frequency</strong></td>
-      <td>🚀</td>
+      <td>🚀 How often do we deploy to prod?</td>
     </tr>
     <tr class="dora-row">
       <td><strong>Lead Time for Changes</strong></td>
-      <td>🐌</td>
+      <td>🐌 What slows down our releases? </td>
     </tr>
     <tr class="dora-row">
       <td><strong>Change Failure Rate</strong></td>
-      <td>💥</td>
+      <td>💥 Why do our changes break things?</td>
     </tr>
     <tr class="dora-row">
       <td><strong>Time to Restore Service</strong></td>
-      <td>⚡</td>
-    </tr>
-    <tr class="dora-row">
-      <td><strong>Reliability</strong></td>
-      <td>🛡️</td>
+      <td>⚡ How quickly do we recover?</td>
     </tr>
   </tbody>
 </table>
+               
+---
 
+## How often are we deploying to production?
+| **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
+|---------------------------|---------------------------|----------------------------|----------------------------|
+| **Deployment Frequency**  | Multiple times/day        | Weekly to monthly          | Less than monthly    
 
+- Smaller changes, lower risks
+- Faster feedback loops, product iterations
 
 ---
 
-## Why can't you deploy more often?
+## Why can't we deploy more often?
+
 <!-- _class: split -->
 | **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
 |---------------------------|---------------------------|----------------------------|----------------------------|
 | **Lead Time for Changes** | **Hours**                | Days                       | Weeks to months            |
 
-> Too many code reviews?
-> Slow build times?
-> Slow test execution?
-> Too many manual steps?
-> Too many approvals?
-> Limitations to zero downtime deployments?
-> Upstream dependencies and downstream impact?
+- Too many code reviews and merge conflicts?
+- Slower build times?
+- Slower test execution?
+- Too many approvals?
+- Limitations to zero downtime deployments?
+- Too many manual steps in deployment?
+- Upstream dependencies and downstream impact?
 
 ---
 
@@ -834,13 +812,13 @@ DevOps Research and Assessment
 | **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
 |---------------------------|---------------------------|----------------------------|----------------------------|
 | **Change Failure Rate**   | **<15%**                 | 15-30%                     | >30%                       |
-> Technical debt with brittle areas in the code base that need refactoring?
-> Are there gaps in your testing pyramid?
-> Are new tests getting added for every bug fix?
-> Are regression tests flaky?
-> Does your pre-prod environment mirror production?
-> Quality of Test data - velocity, variety, volume?
 
+- Technical debt increasing or decreasing?
+- Are there gaps in your testing pyramid?
+- Are new tests getting added for every bug fix?
+- Are the quality of tests adequate?
+- Does your pre-prod environment mirror production?
+- Quality of Test data - velocity, variety, volume?
 
 ---
 
@@ -849,30 +827,31 @@ DevOps Research and Assessment
 | **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
 |---------------------------|---------------------------|----------------------------|----------------------------|
 | **Time to Restore Service** | **<1 hour**             | <1 day                     | >1 day                     |
-> Are the Alert Quality and Volume good enough? 
-> Are your runbooks, support rotation, upcoming release pages up to date? 
-> Are there knowledge and access control gaps in your team? 
-> Are the team members feeling safe during a crisis? 
-> Are there back up plan when the key people are unavailable?
+
+- Are the Alert Quality and Volume separating signals? 
+- Are your documentation, runbooks, support rotation, upcoming release pages up to date? 
+- Are there knowledge and access control gaps in your team? 
+- Are the team members feeling safe during a crisis? 
+- Are there back up plan when the key people are unavailable?
 
 ---
-## DORA
-| **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
-|---------------------------|---------------------------|----------------------------|----------------------------|
-| **Deployment Frequency**  | Multiple times/day        | Weekly to monthly          | Less than monthly          |
-| **Lead Time for Changes** | Hours                    | Days                       | Weeks to months            |
-| **Change Failure Rate**   | <15%                     | 15-30%                     | >30%                       |
-| **Time to Restore Service** | <1 hour                 | <1 day                     | >1 day                     |
+<!-- _class: split -->
+![bg left fit](assets/01_shiftleft.png)
 
----
-## DORA Metrics: What to Ask
+# Dev Experience
+> Happy Developers = Better Software
+- DevContainers for replicable environments
+- Pre-commit/push hooks for Lint, Test, Code Quality, Security Scanning
+- Versioning everything - code, infra, data, models, prompts 
+- Standardized patterns and polices through internal developer platform 
 
-| **Metric**                 | **Key Question**                  |
-|----------------------------|-----------------------------------|
-| **Deployment Frequency**   | How often do we deploy to prod?   |
-| **Lead Time for Changes**  | What slows down our releases?     |
-| **Change Failure Rate**    | Why do our changes break things?  |
-| **Time to Restore Service**| How quickly do we recover?        |
+# Release Experience
+> Customer should not be part of your monitoring stack!
+- Blue Green, Canary Deployments, Feature Flags, Synthetic Monitoring
+- Logs, Metrics, Traces
+- Dashboards for debugging, alerts for action
+- Signals, not noise
+- Periodic reviews of evals, alerts, thresholds
 
 ---
 <!-- _class: split -->
@@ -881,7 +860,6 @@ DevOps Research and Assessment
 * Focus on outcomes, not outputs
 * Metrics guide improvement, they don't define success
 
----
 
 ---
 ![bg left fit](assets/01_shiftleft.png)
