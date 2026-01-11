@@ -8,15 +8,15 @@ paginate: true
 
 ![bg](assets/title_slide.png)
 
----
-
-<!-- header: 'A Bug's Life by Tathagata Dasgupta' -->
-
 --- 
 # <span style="color:red;">Disclaimer</span>
 The following narrative is a work of pure fiction.  
 
-Any similarities to actual people, places, or events are entirely coincidental and absolutely unrelated to the speaker's professional life.  
+Any similarities to actual people, places, or events are entirely coincidental and absolutely unrelated to the systems the speaker is responsible for.
+
+
+No bugs there. Trust him.
+
 
 Furthermore, the speaker denies borrowing the title from a popular animated film produced by a studio with powerful lawyers.
 
@@ -427,8 +427,13 @@ ACT III: The Fix
 ACT III: Postmortem
 </div>
 
+---
+
+![bg fit](assets/01_post_mortem.png)
 
 ---
+
+# old directory structure
 
 ```bash
 /data/nyse.ticker
@@ -436,6 +441,8 @@ ACT III: Postmortem
 /data/nasdaq.ticker
 ```
 ---
+
+# new sharded directory structure
 
 ```
 .
@@ -456,6 +463,7 @@ ACT III: Postmortem
 ```
 
 ---
+# old cron 
 
 ```python
 EXCHANGES = ["nyse", "nasdaq", "amex", "kraken"]
@@ -466,9 +474,11 @@ for ex in EXCHANGES:
     if os.path.exists(file_path):
         os.remove(file_path)
 ```
-
+> different code repo, claude code missed it
+> `os.remove` silently fails if file is not there
 
 ---
+# new cron
 
 ```python
 import os
@@ -486,6 +496,12 @@ for entry in os.listdir(BASE_DIR):
                 print(f"Deleted: {file_path}")
 
 ```
+> quick fix, matches new directory structure
+---
+
+![bg fit](assets/01_what_else_needs_patch.png)
+
+
 ---
 <div class="dramatic-title">
 To Be Continued ...
@@ -517,55 +533,16 @@ Low Latency Engineering
 
 ---
 
-🐞 The New Normal
+* 🌍 Change in Landscape  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_What_</span> is changing?  
+* 🐞 Change in Attitude   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_Why_</span> change our attitude toward bugs?  
+* 🔄 Change in Workflow  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red;">_How_</span> do we act on that change?
 
-📊 Measure Baselines 
 
-🔄 Change Workflows 
-
-🤝 Build Partnerships
-
----
-🐞 The New Normal  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_Why_</span> change our attitude toward bugs?  
-
-📊 Measure Baselines 
-
-🔄 Change Workflows   
-
-🤝 Build Partnerships
-
----
-🐞 The New Normal  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_Why_</span> change our attitude toward bugs?  
-
-📊 Measure Baselines  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red;">_Where_</span> are we today?  
-
-🔄 Change Workflows   
-
-🤝 Build Partnerships  
-
----
-🐞 The New Normal  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_Why_</span> change our attitude toward bugs?  
-
-📊 Measure Baselines  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red;">_Where_</span> are we today?  
-
-🔄 Change Workflows  &nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_What_</span> needs to change?  
-
-🤝 Build Partnerships
 
 ---
 
-🐞 The New Normal  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_Why_</span> change our attitude toward bugs?  
-
-📊 Measure Baselines  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red;">_Where_</span> are we today?  
-
-🔄 Change Workflows  &nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_What_</span> needs to change?  
-
-🤝 Build Partnerships  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_How_</span> do we make it happen?  
-
----
-
-# 🐞 The New Normal  
-<span style="color:red;">_Why_</span> change our attitude toward bugs?
+# 🐞 Change in Landscape
+<span style="color:red;">_What_</span> is changing?
 
 
 ---
@@ -625,33 +602,6 @@ _hasn't this always been like that?_
 ⚡ Coding at the speed of thought
 🦥 Debugging at the speed of sloth 
 
----
-<!-- _class: split -->
-![bg left fit](assets/01_pr.png)
-# <span style="color:red;">Mo code, mo bugs</span>
-➡️  the author
-➡️  the ~~author~~ quality of model?
-➡️  the ~~author~~ quality of prompt?
-➡️  the ~~author~~ quality of review?
-➡️  the ~~author~~ quality of evals?
-
----
-
-
-![bg left:20% fit](assets/01_agent_gone_wild.png)
-![bg right:80% fit](assets/01_replit.png)
-
----
-# 🐞 Right Mindset
-
-* opportunity to plug the gaps, not a blame game
-* learning checkpoints, not personal failures
-* debugging as a discipline, not just occasional damage control
-
-
----
-
-🔄 Change Workflows  &nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_What_</span> needs to change? 
 
 ---
 <!-- _class: split -->
@@ -680,17 +630,55 @@ to be good old fashioned engineering
 
 ---
 
+![bg fit](assets/01_workflow_with_bugs.png)
+
+---
+
 ![bg fit](assets/01_workflow_with_ai_without_bugs.png)
 
 ---
 
-![bg fit](assets/01_workflow_with_bugs.png)
+![bg left:20% fit](assets/01_agent_gone_wild.png)
+![bg right:80% fit](assets/01_replit.png)
+
+
+---
+
+🌍 Change in Landscape
+🐞 Change in Attitude
+
+---
+
+<!-- _class: split -->
+![bg left fit](assets/01_pr.png)
+# <span style="color:red;">BUGS == BLAME</span>
+* 👤 the author?
+* 🔍 the reviewer?
+* 💬 the prompt?
+* 🤖 the model?
+* 📊 the evals?
+* 🧩 third party ai dependencies?
+
+---
+
+<!-- _class: split -->
+<!-- ![bg left:40% fit](assets/01_pipe_fail.gif) -->
+
+# <span style="color:red;">BUGS == OPPORTUNITIES</span>
+* 📚 Learning checkpoints, not personal failures
+* 🏗️ Opportunity to plug the gaps, stronger foundations
+* 🔧 Debugging as a discipline, not occasional damage control
+* 🛡 Guardrails first
+
+---
+🌍 Change in Landscape
+🐞 Change in Attitude
+🔄 Change in Workflow  
 
 ---
 
 <!-- _class: split -->
 ![bg fit](assets/01_shift_left.png)
-
 
 ---
 
@@ -707,42 +695,6 @@ to be good old fashioned engineering
 - **Test Driven Development**
 - **Pair Programming**
 
----
-
-<!-- _class: split -->
-![bg left fit](assets/01_shiftleft.png)
-# Observability
-> Customer should not be part of your monitoring stack!
-- Logs, Metrics, Traces
-- Dashboards for debugging
-- Alerts for action
-- Signals, not noise
-- Periodic reviews of alert and thresholds
-
----
-<!-- _class: split -->
-![bg left fit](assets/01_shiftleft.png)
-# Deployments
-- Blue Green, Canary
-- Synthetic Monitoring
-- Feature Flags
-- Chaos Engineering
-
----
-
-![bg left fit](assets/01_shiftleft.png)
-# Dev Experience
-> Happy devs ship better code 
-- DevContainers
-- Pre-commit Hooks for Lint, Code Quality, Security Scanning
-- Meta prompts (CLAUDE.md)
-
-
-
----
-
-# 📊 Measure Baselines  
-<span style="color:red;">_Where_</span> are we today? 
 
 ---
 <!-- _class: split -->
@@ -809,44 +761,49 @@ DevOps Research and Assessment
   <tbody>
     <tr class="dora-row">
       <td><strong>Deployment Frequency</strong></td>
-      <td>🚀</td>
+      <td>🚀 How often do we deploy to prod?</td>
     </tr>
     <tr class="dora-row">
       <td><strong>Lead Time for Changes</strong></td>
-      <td>🐌</td>
+      <td>🐌 What slows down our releases? </td>
     </tr>
     <tr class="dora-row">
       <td><strong>Change Failure Rate</strong></td>
-      <td>💥</td>
+      <td>💥 Why do our changes break things?</td>
     </tr>
     <tr class="dora-row">
       <td><strong>Time to Restore Service</strong></td>
-      <td>⚡</td>
-    </tr>
-    <tr class="dora-row">
-      <td><strong>Reliability</strong></td>
-      <td>🛡️</td>
+      <td>⚡ How quickly do we recover?</td>
     </tr>
   </tbody>
 </table>
+               
+---
 
+## How often are we deploying to production?
+| **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
+|---------------------------|---------------------------|----------------------------|----------------------------|
+| **Deployment Frequency**  | Multiple times/day        | Weekly to monthly          | Less than monthly    
 
+- Smaller changes, lower risks
+- Faster feedback loops, product iterations
 
 ---
 
-## Why can't you deploy more often?
+## Why can't we deploy more often?
+
 <!-- _class: split -->
 | **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
 |---------------------------|---------------------------|----------------------------|----------------------------|
 | **Lead Time for Changes** | **Hours**                | Days                       | Weeks to months            |
 
-> Too many code reviews?
-> Slow build times?
-> Slow test execution?
-> Too many manual steps?
-> Too many approvals?
-> Limitations to zero downtime deployments?
-> Upstream dependencies and downstream impact?
+- Too many code reviews and merge conflicts?
+- Slower build times?
+- Slower test execution?
+- Too many approvals?
+- Limitations to zero downtime deployments?
+- Too many manual steps in deployment?
+- Upstream dependencies and downstream impact?
 
 ---
 
@@ -855,13 +812,13 @@ DevOps Research and Assessment
 | **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
 |---------------------------|---------------------------|----------------------------|----------------------------|
 | **Change Failure Rate**   | **<15%**                 | 15-30%                     | >30%                       |
-> Technical debt with brittle areas in the code base that need refactoring?
-> Are there gaps in your testing pyramid?
-> Are new tests getting added for every bug fix?
-> Are regression tests flaky?
-> Does your pre-prod environment mirror production?
-> Quality of Test data - velocity, variety, volume?
 
+- Technical debt increasing or decreasing?
+- Are there gaps in your testing pyramid?
+- Are new tests getting added for every bug fix?
+- Are the quality of tests adequate?
+- Does your pre-prod environment mirror production?
+- Quality of Test data - velocity, variety, volume?
 
 ---
 
@@ -870,30 +827,31 @@ DevOps Research and Assessment
 | **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
 |---------------------------|---------------------------|----------------------------|----------------------------|
 | **Time to Restore Service** | **<1 hour**             | <1 day                     | >1 day                     |
-> Are the Alert Quality and Volume good enough? 
-> Are your runbooks, support rotation, upcoming release pages up to date? 
-> Are there knowledge and access control gaps in your team? 
-> Are the team members feeling safe during a crisis? 
-> Are there back up plan when the key people are unavailable?
+
+- Are the Alert Quality and Volume separating signals? 
+- Are your documentation, runbooks, support rotation, upcoming release pages up to date? 
+- Are there knowledge and access control gaps in your team? 
+- Are the team members feeling safe during a crisis? 
+- Are there back up plan when the key people are unavailable?
 
 ---
-## DORA
-| **Metric**               | **High Performers**       | **Mid Performers**        | **Low Performers**        |
-|---------------------------|---------------------------|----------------------------|----------------------------|
-| **Deployment Frequency**  | Multiple times/day        | Weekly to monthly          | Less than monthly          |
-| **Lead Time for Changes** | Hours                    | Days                       | Weeks to months            |
-| **Change Failure Rate**   | <15%                     | 15-30%                     | >30%                       |
-| **Time to Restore Service** | <1 hour                 | <1 day                     | >1 day                     |
+<!-- _class: split -->
+![bg left fit](assets/01_shiftleft.png)
 
----
-## DORA Metrics: What to Ask
+# Dev Experience
+> Happy Developers = Better Software
+- DevContainers for replicable environments
+- Pre-commit/push hooks for Lint, Test, Code Quality, Security Scanning
+- Versioning everything - code, infra, data, models, prompts 
+- Standardized patterns and polices through internal developer platform 
 
-| **Metric**                 | **Key Question**                  |
-|----------------------------|-----------------------------------|
-| **Deployment Frequency**   | How often do we deploy to prod?   |
-| **Lead Time for Changes**  | What slows down our releases?     |
-| **Change Failure Rate**    | Why do our changes break things?  |
-| **Time to Restore Service**| How quickly do we recover?        |
+# Release Experience
+> Customer should not be part of your monitoring stack!
+- Blue Green, Canary Deployments, Feature Flags, Synthetic Monitoring
+- Logs, Metrics, Traces
+- Dashboards for debugging, alerts for action
+- Signals, not noise
+- Periodic reviews of evals, alerts, thresholds
 
 ---
 <!-- _class: split -->
@@ -902,7 +860,6 @@ DevOps Research and Assessment
 * Focus on outcomes, not outputs
 * Metrics guide improvement, they don't define success
 
----
 
 ---
 ![bg left fit](assets/01_shiftleft.png)
@@ -1008,9 +965,6 @@ Is it our architecture? Our processes? Or is it us?
 Technology will keep moving faster than we can keep up with.
 Crisis will always be a part of software development.
 
-How we respond to change and crisis, will define us and our products.
+How we respond to change, will define us and our products.
 So lets be little kind to each other, and also to ourselves.
 
----
-
-![bg fit](assets/01_speakers_lounge.png)
