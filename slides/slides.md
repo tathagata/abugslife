@@ -206,38 +206,6 @@ for Financial Markets_
 
 ---
 
-<style>
-@keyframes typewriter {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blink {
-  50% { border-color: transparent; }
-}
-
-.dramatic-title {
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
-  font-size: 3em;
-  overflow: hidden;
-  border-right: 3px solid;
-  white-space: nowrap;
-  margin: 0 auto;
-  display: inline-block;
-  animation: 
-    typewriter 3s steps(20) 1s forwards,
-    blink 0.75s step-end infinite;
-}
-</style>
-
-<div class="dramatic-title">
-ACT II: The Hunt
-</div>
-
-
----
-
 
 ![bg fit](assets/01_slack_07.png)
 
@@ -337,37 +305,6 @@ ACT II: The Hunt
 ![bg fit](assets/01_slack_12.png)
 
 ---
-<style>
-@keyframes typewriter {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blink {
-  50% { border-color: transparent; }
-}
-
-.dramatic-title {
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
-  font-size: 3em;
-  overflow: hidden;
-  border-right: 3px solid;
-  white-space: nowrap;
-  margin: 0 auto;
-  display: inline-block;
-  animation: 
-    typewriter 3s steps(20) 1s forwards,
-    blink 0.75s step-end infinite;
-}
-</style>
-
-<div class="dramatic-title">
-ACT III: The Fix
-</div>
-
-
----
 
 <div class="character-grid">
   <div class="character-item">
@@ -424,7 +361,7 @@ ACT III: The Fix
 ---
 
 <div class="dramatic-title">
-ACT IV: Postmortem
+ACT II: Postmortem
 </div>
 
 ---
@@ -731,7 +668,7 @@ to be good old fashioned engineering
 
 ---
 <!-- _class: split -->
-![bg left fit](assets/01_gaming_metrics.png)
+![bg left fit](assets/01_measure_to_improve.gif)
 > If you can't measure it, you can't improve it.
 * code coverage
 * test pass rate
@@ -741,13 +678,13 @@ to be good old fashioned engineering
 
 # Yet more metrics
 <!-- _class: split -->
-![bg left fit](assets/dora-swiper.gif)
+![bg left:40% fit](assets/01_not_this_dora.jpg)
 DORA
 DevOps Research and Assessment 
 
 ---
-## DORA Metrics: What to Ask
-
+## Explore DORA Metrics 
+![bg left:40% fit](assets/01_not_this_dora.jpg)
 <style>
 .dora-table {
   width: 100%;
@@ -878,64 +815,18 @@ DevOps Research and Assessment
 
 ---
 <div class="dramatic-title">
-Final ACT: 
+Final Act
 </div>
 
 ---
 <!-- _class: split -->
 
-![bg left:60%](assets/01_office.png)
+![bg left:60% fit](assets/01_postmortem_actions.png)
 > Let's see this as an _opportunity_ 
 
 > What can we do to make this a better product?
 
----
-
-# Postmortem Action Items
-
-* **WHO** does **WHAT** by **WHEN**
-* Short term
-* Long term
-
----
-
-<div class="character-grid">
-  <div class="character-item">
-    <img src="assets/slim.png" alt="Slim">
-    <h3>Slim</h3>
-    <p>L1 Support</p>
-  </div>
-  <div class="character-item">
-    <img src="assets/dot.png" alt="Dot">
-    <h3>Dot</h3>
-    <p>Incident Manager</p>
-  </div>
-  <div class="character-item">
-    <img src="assets/atta.png" alt="Atta">
-    <h3>Atta</h3>
-    <p>Product Owner</p>
-  </div>
-  <div class="character-item">
-    <img src="assets/rosie.png" alt="Rosie">
-    <h3>Rosie</h3>
-    <p>UI Team Lead</p>
-  </div>
-  <div class="character-item">
-    <img src="assets/manny.png" alt="Manny">
-    <h3>Manny</h3>
-    <p>SRE Team</p>
-  </div>
-  <div class="character-item">
-    <img src="assets/heimlich.png" alt="Heimlich">
-    <h3>Heimlich</h3>
-    <p>Backend C++</p>
-  </div>
-    <div class="character-item">
-    <img src="assets/flik.png" alt="Flik">
-    <h3>Flik</h3>
-    <p>Data Team Lead</p>
-  </div>
-</div>
+> **WHO** does **WHAT** by **WHEN**
 
 
 ---
