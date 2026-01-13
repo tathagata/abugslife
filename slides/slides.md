@@ -831,11 +831,10 @@ DevOps Research and Assessment
 | **Lead Time for Changes** | **Hours**                | Days                       | Weeks to months            |
 
 - Too many code reviews and merge conflicts?
-- Slower build times?
-- Slower test execution?
+- Slower build times & test execution?
 - Too many approvals?
-- Limitations to zero downtime deployments?
 - Too many manual steps in deployment?
+- Limitations to zero downtime deployments?
 - Upstream dependencies and downstream impact?
 
 ---
@@ -847,9 +846,9 @@ DevOps Research and Assessment
 | **Change Failure Rate**   | **<15%**                 | 15-30%                     | >30%                       |
 
 - Technical debt increasing or decreasing?
-- Are there gaps in your testing pyramid?
 - Are new tests getting added for every bug fix?
 - Are the quality of tests adequate?
+- Are there gaps in your testing pyramid?
 - Does your pre-prod environment mirror production?
 - Quality of Test data - velocity, variety, volume?
 
@@ -862,8 +861,8 @@ DevOps Research and Assessment
 | **Time to Restore Service** | **<1 hour**             | <1 day                     | >1 day                     |
 
 - Are the Alert Quality and Volume separating signals? 
-- Are your documentation, runbooks, support rotation, upcoming release pages up to date? 
 - Are there knowledge and access control gaps in your team? 
+- Are your docs, runbooks, support rotation, upcoming release up to date? 
 - Are the team members feeling safe during a crisis? 
 - Are there back up plan when the key people are unavailable?
 
