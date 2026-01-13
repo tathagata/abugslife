@@ -424,7 +424,7 @@ ACT III: The Fix
 ---
 
 <div class="dramatic-title">
-ACT III: Postmortem
+ACT IV: Postmortem
 </div>
 
 ---
@@ -527,9 +527,15 @@ Low Latency Engineering
 
 
 ---
-![bg fit left:50%](assets/01_front_row_seats.png)
-                ➡️ What else needs a patch?
-                 
+![bg fit left:40%](assets/01_domino.jpg)
+# A bug fix is rarely a quick code change
+- What else needs a patch?
+- Why couldn't we prevent this earlier?
+- What can we do to prevent this in future?
+
+---
+
+# Future is here
 
 ---
 
@@ -662,7 +668,7 @@ to be good old fashioned engineering
 ---
 
 <!-- _class: split -->
-<!-- ![bg left:40% fit](assets/01_pipe_fail.gif) -->
+![bg left:35% fit](assets/01_jump_hurdles.gif)
 
 # <span style="color:red;">BUGS == OPPORTUNITIES</span>
 * 📚 Learning checkpoints, not personal failures
@@ -677,11 +683,6 @@ to be good old fashioned engineering
 
 ---
 
-<!-- _class: split -->
-![bg fit](assets/01_shift_left.png)
-
----
-
 ![traditional](assets/01_traditional.png)
 
 ---
@@ -689,11 +690,43 @@ to be good old fashioned engineering
 ![shiftleft](assets/01_shiftleft.png)
 
 ---
+
 <!-- _class: split -->
 ![bg left fit](assets/01_shiftleft.png)
-# Sounds familiar?
+# Extreme Programming
 - **Test Driven Development**
 - **Pair Programming**
+
+---
+<!-- _class: split -->
+![bg left:40% fit](assets/01_shiftleft.png)
+
+## Dev Experience
+- DevContainers for replicable environments
+- Pre-commit/push hooks for Lint, Test, Code Quality, Security Scanning
+- Versioning everything - code, infra, data, models, prompts 
+- Standardized patterns and polices 
+> Happy Developers = Better Software
+
+---
+
+![bg left:40% fit](assets/01_shiftleft.png)
+## Ops Experience
+- Logs, Metrics, Traces
+- Dashboards for debugging
+- Alerts for action
+- Signals, not noise
+- Periodic review of evals, alerts, thresholds
+- Blue Green, Canary Deployments, Feature Flags, Synthetic Monitoring
+> Customer should not be part of your monitoring stack!
+
+---
+![bg left fit](assets/01_shiftleft.png)
+# Partnership 
+> bugs that reside outside the code
+- Empathy
+- Honest Communication
+- Trust
 
 
 ---
@@ -836,49 +869,34 @@ DevOps Research and Assessment
 
 ---
 <!-- _class: split -->
-![bg left fit](assets/01_shiftleft.png)
-
-# Dev Experience
-> Happy Developers = Better Software
-- DevContainers for replicable environments
-- Pre-commit/push hooks for Lint, Test, Code Quality, Security Scanning
-- Versioning everything - code, infra, data, models, prompts 
-- Standardized patterns and polices through internal developer platform 
-
-# Release Experience
-> Customer should not be part of your monitoring stack!
-- Blue Green, Canary Deployments, Feature Flags, Synthetic Monitoring
-- Logs, Metrics, Traces
-- Dashboards for debugging, alerts for action
-- Signals, not noise
-- Periodic reviews of evals, alerts, thresholds
-
----
-<!-- _class: split -->
 ![bg left fit](assets/goodhart.png)
 # Goodhart's Law
 * Focus on outcomes, not outputs
 * Metrics guide improvement, they don't define success
 
 
+
+
 ---
-![bg left fit](assets/01_shiftleft.png)
-# Partnership 
-> bugs that happen before the code
-- Empathy
-- Honest Communication
-- Trust
+<div class="dramatic-title">
+Final ACT: 
+</div>
 
 ---
 <!-- _class: split -->
 
 ![bg left:60%](assets/01_office.png)
+> Let's see this as an _opportunity_ 
+
+> What can we do to make this a better product?
 
 ---
 
 # Postmortem Action Items
 
-**WHO** does **WHAT** by **WHEN**
+* **WHO** does **WHAT** by **WHEN**
+* Short term
+* Long term
 
 ---
 
@@ -936,35 +954,39 @@ DevOps Research and Assessment
 
 |**Team**| **What**                          | **Who** |
 |----|-------------------------------------|---------|
-|SRE | Alert on 85% of disk usage & Runbook update             | <img src="assets/manny.png" class="profile-img"> |
-|Data| Add tests and error handling, move purger job to Airflow  | <img src="assets/flik.png" class="profile-img"> |
-|UI  | Improve Signal to Noise ratio, refactoring third party lib errors         | <img src="assets/rosie.png" class="profile-img"> |
-|C++ | Update Support rotation calendar, ensure secondary support person        | <img src="assets/heimlich.png" class="profile-img"> |
+|SRE | Alert on 85% of disk usage              | <img src="assets/manny.png" class="profile-img"> |
+|Data| Move all scripts to monorepo  | <img src="assets/flik.png" class="profile-img"> |
+|UI  | Refactoring third party lib errors         | <img src="assets/rosie.png" class="profile-img"> |
+|C++ | Update Support rotation calendar        | <img src="assets/heimlich.png" class="profile-img"> |
 
 
 ---
 # Long Term
 
-| **Team** | **Focus**                                                                 | **DORA Metric**         |
+| **Team** | **Shift Left Focus**                                                                 | **DORA Metric**         |
 |----------|----------------------------------------------------------------------------|-------------------------|
-| SRE      | Notifications for releases and drift detection to keep everyone informed   | Deployment Frequency    |
+| SRE      | Notifications for releases with versions   | Deployment Frequency    |
+| Data     | Enhance data quality in non-prod environments                        | Change Failure Rate     |
+| UI       | Synthetic UI tests for post release validations                  | Time to Restore Service |
 | C++      | Reduce build times by 5%                                                   | Lead Time for Changes   |
-| Data     | Enhance data quality in non-production environments                        | Change Failure Rate     |
-| UI       | Implement synthetic UI tests for post release validations                  | Time to Restore Service |
 
 ---
 
-# A Bug's Life
+# A Bug's Life 🐛
 
-A bug fix is rarely a quick code change.
-A bug's life is a lesson in software development.
+* 🔧 A bug fix is rarely a quick code change.
+* 📖 A bug's life is a lesson in software development.
 
-_What else needs a patch_?
-Is it our architecture? Our processes? Or is it us?
 
-Technology will keep moving faster than we can keep up with.
-Crisis will always be a part of software development.
+* 🩹 _What else needs a patch_?
+* 🏗️ Is it our architecture? Our processes? Or is it us?
 
-How we respond to change, will define us and our products.
-So lets be little kind to each other, and also to ourselves.
+
+* 🚀 Technology will keep moving faster than we can keep up with.
+* ⚠️ Crisis will always be a part of software development.
+
+
+* 🔄 How we respond to change, will define us and our products.
+* 💙 So lets be little kind to each other, and also to ourselves.
+
 
