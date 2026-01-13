@@ -23,9 +23,15 @@
 # Speaker Notes Narrative
 
 In closing we return to the postmortem in Ant Intelligence.
-The SRE had asked the question what else needed a patch?
-Hours later, and a lot white boarding later, the teams came up with some short term and long term action items.
+When we left off the team Manny the SRE asking what other than code needed a patch?
+That postmortem still ranks as one of the longest at Ant Intelligence.
+The temperature in the room got very high, until Atta the product manager asked the question
 
+What if we see these bugs as an opportunity to make our product betters?
+
+Turned out every team had a bunch of great ideas!
+To make things concrete they decided to break them in to long term and short term goals.
+Before leaving, they had a list of who does what by when.
 
 The SREs stepped in to put alerts around disk usage and a runbooks to safely remove old data
 The Data team decided having an out of band purge process was a bad design - and would handle the whole processing in Airflow.
