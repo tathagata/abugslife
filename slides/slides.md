@@ -450,6 +450,7 @@ To Be Continued ...
 # A Bug's Life
 by Tathagata Dasgupta (T)
 Low Latency Engineering
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="20" height="20"> [/tathagata](https://github.com/tathagata) | <img src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png" alt="Twitter" width="20" height="20"> [@tathagata](https://twitter.com/tathagata) | <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="LinkedIn" width="20" height="20"> [/tathagatadg](https://linkedin.com/in/tathagatadg)
 
 ---
 
@@ -466,13 +467,17 @@ Low Latency Engineering
 ---
 ![bg fit left:40%](assets/01_domino.jpg)
 # A bug fix is rarely a quick code change
-- What else needs a patch?
-- Why couldn't we prevent this earlier?
-- What can we do to prevent this in future?
+- 🩹 What else needs a patch?
+- 🔍 Why couldn't we prevent this earlier?
+- 🛡️ What can we do to prevent this in future?
 
 ---
 
-# Future is here
+![bg left fit](assets/01_back_to_the_future.jpeg)
+# circa 2015
+---
+![bg left fit](assets/01_terminator.jpg)
+# circa 2029
 
 ---
 
@@ -660,10 +665,10 @@ to be good old fashioned engineering
 ---
 ![bg left fit](assets/01_shiftleft.png)
 # Partnership 
-> bugs that reside outside the code
 - Empathy
 - Honest Communication
 - Trust
+> Some bugs reside outside the codebase
 
 
 ---
@@ -674,13 +679,6 @@ to be good old fashioned engineering
 * test pass rate
 * cyclomatic complexity
 
----
-
-# Yet more metrics
-<!-- _class: split -->
-![bg left:40% fit](assets/01_not_this_dora.jpg)
-DORA
-DevOps Research and Assessment 
 
 ---
 ## Explore DORA Metrics 
@@ -755,8 +753,10 @@ DevOps Research and Assessment
 |---------------------------|---------------------------|----------------------------|----------------------------|
 | **Deployment Frequency**  | Multiple times/day        | Weekly to monthly          | Less than monthly    
 
-- Smaller changes, lower risks
-- Faster feedback loops, product iterations
+- 🔄 Smaller changes
+- ⚠️ Lower risks
+- ⚡ Faster feedback loops
+- 🔁 Product iterations
 
 ---
 
@@ -767,12 +767,12 @@ DevOps Research and Assessment
 |---------------------------|---------------------------|----------------------------|----------------------------|
 | **Lead Time for Changes** | **Hours**                | Days                       | Weeks to months            |
 
-- Too many code reviews and merge conflicts?
-- Slower build times & test execution?
-- Too many approvals?
-- Too many manual steps in deployment?
-- Limitations to zero downtime deployments?
-- Upstream dependencies and downstream impact?
+- 🔍 Too many code reviews and merge conflicts?
+- 🐢 Slower build times & test execution?
+- ✅ Too many approvals?
+- 🖐️ Too many manual steps in deployment?
+- ⏸️ Limitations to zero downtime deployments?
+- 🔗 Upstream dependencies and downstream impact?
 
 ---
 
@@ -782,12 +782,12 @@ DevOps Research and Assessment
 |---------------------------|---------------------------|----------------------------|----------------------------|
 | **Change Failure Rate**   | **<15%**                 | 15-30%                     | >30%                       |
 
-- Technical debt increasing or decreasing?
-- Are new tests getting added for every bug fix?
-- Are the quality of tests adequate?
-- Are there gaps in your testing pyramid?
-- Does your pre-prod environment mirror production?
-- Quality of Test data - velocity, variety, volume?
+- 📈 Technical debt increasing or decreasing?
+- 🧪 New tests for every bug fix?
+- ✅ Quality of tests adequate?
+- 🔺 Any gaps in your testing pyramid?
+- 🪞 Pre-prod environment closely reflecting to prod?
+- 📊 Quality of Test data - velocity, variety, volume?
 
 ---
 
@@ -797,20 +797,18 @@ DevOps Research and Assessment
 |---------------------------|---------------------------|----------------------------|----------------------------|
 | **Time to Restore Service** | **<1 hour**             | <1 day                     | >1 day                     |
 
-- Are the Alert Quality and Volume separating signals? 
-- Are there knowledge and access control gaps in your team? 
-- Are your docs, runbooks, support rotation, upcoming release up to date? 
-- Are the team members feeling safe during a crisis? 
-- Are there back up plan when the key people are unavailable?
+- 🧠 Knowledge gaps, key person risks?
+- 📚 Docs, runbooks, support rotation, upcoming release up to date? 
+- 🛡️ Team members feeling safe during a crisis?
+
 
 ---
 <!-- _class: split -->
-![bg left fit](assets/goodhart.png)
-# Goodhart's Law
-* Focus on outcomes, not outputs
-* Metrics guide improvement, they don't define success
-
-
+![bg left:40% fit](assets/goodhart.png)
+# Last thing about metrics ...
+* 📊 Metrics guide improvement
+* 🚫 Optimizing metrics undermines the goal
+* 🏆 Focus on outcomes, not outputs
 
 
 ---
