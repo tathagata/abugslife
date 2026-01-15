@@ -428,9 +428,13 @@ for entry in os.listdir(BASE_DIR):
     if os.path.isdir(day_dir):
         for ex in EXCHANGES:
             file_path = os.path.join(day_dir, f"{ex}.ticker")
-            if os.path.exists(file_path):
+              try:
                 os.remove(file_path)
                 print(f"Deleted: {file_path}")
+              except FileNotFoundError:
+                print(f"File not found: {file_path}")
+              except Exception as e:
+                print(f"Error deleting {file_path}: {e}")
 
 ```
 > quick fix, matches new directory structure
