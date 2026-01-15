@@ -458,7 +458,6 @@ Low Latency Engineering
 
 [tathagata.dev](https://tathagata.dev)
 
-![right width:20px](assets/01_codemash-logo.png)
 
 ---
 
