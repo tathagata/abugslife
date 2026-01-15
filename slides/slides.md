@@ -1,5 +1,5 @@
 ---
-marp: false
+marp: true
 theme: default
 # class: invert
 html: true
@@ -436,8 +436,8 @@ for entry in os.listdir(BASE_DIR):
 > quick fix, matches new directory structure
 ---
 
-![bg fit](assets/01_what_else_needs_patch.png)
-
+![bg left:60%](assets/01_what_else_needs_patch.png)
+What else needs a patch?
 
 ---
 <div class="dramatic-title">
@@ -445,52 +445,84 @@ To Be Continued ...
 </div>
 
 ---
+![alt LSEG](assets/01_lseg.png)
 
-![alt text](assets/01_lseg.png)
 # A Bug's Life
-by Tathagata Dasgupta (T)
+
+**by Tathagata Dasgupta (T)**  
 Low Latency Engineering
-<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="20" height="20"> [/tathagata](https://github.com/tathagata) | <img src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png" alt="Twitter" width="20" height="20"> [@tathagata](https://twitter.com/tathagata) | <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="LinkedIn" width="20" height="20"> [/tathagatadg](https://linkedin.com/in/tathagatadg)
+
+[tathagata.dev](https://tathagata.dev)
+
+![right width:20px](assets/01_codemash-logo.png)
 
 ---
 
 ![bg fit left:60%](assets/01_dev_sre.png)
   
-
 ---
 <!-- _class: split -->
 
 ![bg fit left:50%](assets/01_front_row_seats.png)
-✅ Patch deployed ➡️ bug is fixed
-
-
+➡️ bug is fixed 
+✅ patch deployed
+🩹 what else needs a patch? 
+ 
 ---
+
 ![bg fit left:40%](assets/01_domino.jpg)
-# A bug fix is rarely a quick code change
-- 🩹 What else needs a patch?
+# 🩹 What else needs a patch?
 - 🔍 Why couldn't we prevent this earlier?
-- 🛡️ What can we do to prevent this in future?
+- 🛡️ How can we prevent this in future?
 
 ---
 
-![bg left fit](assets/01_back_to_the_future.jpeg)
-# circa 2015
----
-![bg left fit](assets/01_terminator.jpg)
-# circa 2029
+<style scoped>
+section {
+  padding: 0;
+}
+.timeline-year {
+  position: absolute;
+  bottom: 40px;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 3px 3px 6px black;
+}
+.timeline-year.left {
+  left: 25%;
+  transform: translateX(-50%);
+}
+.timeline-year.right {
+  right: 25%;
+  transform: translateX(50%);
+}
+</style>
+
+![bg](assets/01_back_to_the_future.jpeg)
+![bg](assets/01_terminator.jpg)
+
+<div class="timeline-year left">2015</div>
+<div class="timeline-year right">2029</div>
 
 ---
 
-* 🌍 Change in Landscape  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_What_</span> is changing?  
-* 🐞 Change in Attitude   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red;">_Why_</span> change our attitude toward bugs?  
-* 🔄 Change in Workflow  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red;">_How_</span> do we act on that change?
-
+| Agenda | |
+|---|---|
+| 🐛 Bugs and Us | <span style="color:red;">_Who_</span> broke prod? |
+| 🌍 Change in Landscape | <span style="color:red;">_What_</span> is changing? |
+| 🐞 Shift in Mindset | <span style="color:red;">_Why_</span> change our attitude toward bugs? |
+| 🔄 Improve Workflow | <span style="color:red;">_How_</span> do we act on that change? |
 
 
 ---
 
-# 🐞 Change in Landscape
-<span style="color:red;">_What_</span> is changing?
+| Agenda | |
+|---|---|
+| 🐛 Bugs and Us | <span style="color:red;">_Who_</span> broke prod? |
+| <span style="color:#ccc;">🌍 Change in Landscape</span> | <span style="color:#ccc;">_What_ is changing?</span> |
+| <span style="color:#ccc;">🐞 Shift in Mindset</span> | <span style="color:#ccc;">_Why_ change our attitude toward bugs?</span> |
+| <span style="color:#ccc;">🔄 Improve Workflow</span> | <span style="color:#ccc;">_How_ do we act on that change?</span> |
 
 
 ---
@@ -536,6 +568,14 @@ Low Latency Engineering
 ➡️ **pride, ownership, craftsmanship**
 
 _hasn't this always been like that?_
+
+---
+| Agenda | |
+|---|---|
+| <span style="color:#ccc;">🐛 Bugs and Us</span> | <span style="color:#ccc;">_Who_ broke prod?</span> |
+| 🌍 Change in Landscape | <span style="color:red;">_What_</span> is changing? |
+| <span style="color:#ccc;">🐞 Shift in Mindset</span> | <span style="color:#ccc;">_Why_ change our attitude toward bugs?</span> |
+| <span style="color:#ccc;">🔄 Improve Workflow</span> | <span style="color:#ccc;">_How_ do we act on that change?</span> |
 
 ---
 
@@ -592,8 +632,12 @@ to be good old fashioned engineering
 
 ---
 
-🌍 Change in Landscape
-🐞 Change in Attitude
+| Agenda | |
+|---|---|
+| <span style="color:#ccc;">🐛 Bugs and Us</span> | <span style="color:#ccc;">_Who_ broke prod?</span> |
+| <span style="color:#ccc;">🌍 Change in Landscape</span> | <span style="color:#ccc;">_What_ is changing?</span> |
+| 🐞 Shift in Mindset | <span style="color:red;">_Why_</span> change our attitude toward bugs? |
+| <span style="color:#ccc;">🔄 Improve Workflow</span> | <span style="color:#ccc;">_How_ do we act on that change?</span> |
 
 ---
 
@@ -619,17 +663,24 @@ to be good old fashioned engineering
 * 🛡 Guardrails first
 
 ---
-🌍 Change in Landscape
-🐞 Change in Attitude
-🔄 Change in Workflow  
+| Agenda | |
+|---|---|
+| <span style="color:#ccc;">🐛 Bugs and Us</span> | <span style="color:#ccc;">_Who_ broke prod?</span> |
+| <span style="color:#ccc;">🌍 Change in Landscape</span> | <span style="color:#ccc;">_What_ is changing?</span> |
+| <span style="color:#ccc;">🐞 Shift in Mindset</span> | <span style="color:#ccc;">_Why_ change our attitude toward bugs?</span> |
+| 🔄 Improve Workflow | <span style="color:red;">_How_</span> do we act on that change? |
+
 
 ---
-
 ![traditional](assets/01_traditional.png)
 
 ---
 
 ![shiftleft](assets/01_shiftleft.png)
+
+---
+
+![bg fit](assets/01_shift_left.png)
 
 ---
 
@@ -817,9 +868,14 @@ Final Act
 </div>
 
 ---
+
+![bg left:60%](assets/01_what_else_needs_patch.png)
+What else needs a patch?
+
+---
 <!-- _class: split -->
 
-![bg left:60% fit](assets/01_postmortem_actions.png)
+![bg left:60%](assets/01_postmortem_actions.png)
 > Let's see this as an _opportunity_ 
 
 > What can we do to make this a better product?
@@ -840,12 +896,12 @@ Final Act
 }
 </style>
 
-|**Team**| **What**                          | **Who** |
-|----|-------------------------------------|---------|
-|SRE | Alert on 85% of disk usage              | <img src="assets/manny.png" class="profile-img"> |
-|Data| Move all scripts to monorepo  | <img src="assets/flik.png" class="profile-img"> |
-|UI  | Refactoring third party lib errors         | <img src="assets/rosie.png" class="profile-img"> |
-|C++ | Update Support rotation calendar        | <img src="assets/heimlich.png" class="profile-img"> |
+|**Team**| **What**                          | **Who** | **When** |
+|----|-------------------------------------|---------|----------|
+|SRE | Alert on 85% of disk usage              | <img src="assets/manny.png" class="profile-img"> | Next day |
+|Data| Move all scripts to monorepo  | <img src="assets/flik.png" class="profile-img"> | End of the week |
+|UI  | Refactoring third party lib errors         | <img src="assets/rosie.png" class="profile-img"> | End of the month |
+|C++ | Update Support rotation calendar        | <img src="assets/heimlich.png" class="profile-img"> | End of the day  |
 
 
 ---
