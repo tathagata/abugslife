@@ -436,8 +436,8 @@ for entry in os.listdir(BASE_DIR):
 > quick fix, matches new directory structure
 ---
 
-![bg fit](assets/01_what_else_needs_patch.png)
-
+![bg left:60%](assets/01_what_else_needs_patch.png)
+What else needs a patch?
 
 ---
 <div class="dramatic-title">
@@ -445,12 +445,16 @@ To Be Continued ...
 </div>
 
 ---
+![alt LSEG](assets/01_lseg.png)
 
-![alt text](assets/01_lseg.png)
 # A Bug's Life
-by Tathagata Dasgupta (T)
+
+**by Tathagata Dasgupta (T)**  
 Low Latency Engineering
-<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="20" height="20"> [/tathagata](https://github.com/tathagata) | <img src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png" alt="Twitter" width="20" height="20"> [@tathagata](https://twitter.com/tathagata) | <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="LinkedIn" width="20" height="20"> [/tathagatadg](https://linkedin.com/in/tathagatadg)
+
+[tathagata.dev](https://tathagata.dev)
+
+![right width:20px](assets/01_codemash-logo.png)
 
 ---
 
@@ -666,13 +670,17 @@ to be good old fashioned engineering
 | <span style="color:#ccc;">🐞 Shift in Mindset</span> | <span style="color:#ccc;">_Why_ change our attitude toward bugs?</span> |
 | 🔄 Improve Workflow | <span style="color:red;">_How_</span> do we act on that change? |
 
----
 
+---
 ![traditional](assets/01_traditional.png)
 
 ---
 
 ![shiftleft](assets/01_shiftleft.png)
+
+---
+
+![bg fit](assets/01_shift_left.png)
 
 ---
 
@@ -860,9 +868,14 @@ Final Act
 </div>
 
 ---
+
+![bg left:60%](assets/01_what_else_needs_patch.png)
+What else needs a patch?
+
+---
 <!-- _class: split -->
 
-![bg left:60% fit](assets/01_postmortem_actions.png)
+![bg left:60%](assets/01_postmortem_actions.png)
 > Let's see this as an _opportunity_ 
 
 > What can we do to make this a better product?
@@ -887,8 +900,8 @@ Final Act
 |----|-------------------------------------|---------|----------|
 |SRE | Alert on 85% of disk usage              | <img src="assets/manny.png" class="profile-img"> | Next day |
 |Data| Move all scripts to monorepo  | <img src="assets/flik.png" class="profile-img"> | End of the week |
-|UI  | Refactoring third party lib errors         | <img src="assets/rosie.png" class="profile-img"> | That month |
-|C++ | Update Support rotation calendar        | <img src="assets/heimlich.png" class="profile-img"> | That night |
+|UI  | Refactoring third party lib errors         | <img src="assets/rosie.png" class="profile-img"> | End of the month |
+|C++ | Update Support rotation calendar        | <img src="assets/heimlich.png" class="profile-img"> | End of the day  |
 
 
 ---
