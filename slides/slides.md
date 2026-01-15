@@ -412,7 +412,7 @@ for ex in EXCHANGES:
         os.remove(file_path)
 ```
 > different code repo, claude code missed it
-> `os.remove` silently fails if file is not there
+> `os.remove` was not getting called in new structure
 
 ---
 # new cron
